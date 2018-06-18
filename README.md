@@ -1,2 +1,2 @@
-# phidental-web
-phidental website
+# psdental-web
+Palm Square Dental

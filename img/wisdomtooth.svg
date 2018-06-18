@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="70mm"
+   height="94.993752mm"
+   viewBox="0 0 70 94.993752"
+   version="1.1"
+   id="svg4863"
+   inkscape:version="0.92.3pre0 (0ab9bec, 2018-03-03)"
+   sodipodi:docname="wisdomtooth.svg">
+  <defs
+     id="defs4857" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="360.41692"
+     inkscape:cy="143.26003"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g160"
+     showgrid="false"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     inkscape:window-width="1920"
+     inkscape:window-height="1036"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4860">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-47.85555,-153.19245)">
+    <g
+       transform="matrix(1.045734,0,0,-1.045734,100.873,194.17341)"
+       id="g160"
+       style="fill:#00b0bd;fill-opacity:1">
+      <path
+         inkscape:connector-curvature="0"
+         id="path162"
+         style="fill:#00b0bd;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.01960766"
+         d="m -1.7458166,4.0807862 c -1.7139604,0 -4.7478461,-1.1510509 -5.0211009,-1.6119135 -1.9668725,-2.03996482 -1.7011356,-6.1755428 -1.7123512,-6.3549938 0.00102,-1.151137 2.2355206,-4.8528536 3.0967699,-11.2523519 0.4750637,-4.199998 0.872686,-8.277593 -2.5684896,-8.277593 -3.3025096,0 -5.9969636,10.444075 -8.1610996,11.095444 0,0 -0.37459,-0.871813 0,0 -0.615843,-0.549347 -0.865708,-0.789926 -0.969671,-2.810064 -0.04507,-5.211964 3.416798,-10.995046 0.130891,-11.325777 -3.661497,-0.368532 -8.789828,11.648134 -9.775876,15.956443 -5.635395,5.8412833 -4.691545,10.88551492 -4.691545,11.7185343 -0.01122,0.1702745 0.03106,0.748085 -0.138201,1.1977319 -0.273255,0.4588235 -1.10179,1.66454 -2.81677,1.66454 -2.039215,0 -4.078431,-5.098038 -8.156861,-5.098038 V -25.487834 c 0,-2.252313 1.826117,-4.078431 4.07843,-4.078431 H 2.3326138 c 2.2523132,0 4.0784304,1.826118 4.0784304,4.078431 v 24.4705822 c -4.0784304,0 -6.11764561,5.098038 -8.1568608,5.098038"
+         sodipodi:nodetypes="ccccscccscccscsssscc" />
+    </g>
+    <g
+       transform="matrix(0.66223663,-0.22344206,-0.22344206,-0.66223663,89.938237,188.35401)"
+       id="g22"
+       style="fill:#00b0bd;fill-opacity:1">
+      <path
+         inkscape:connector-curvature="0"
+         id="path24"
+         style="fill:#00b0bd;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m -0.70673068,-2.5257993 c 0,7.381 -5.94700002,9 -8.00000002,9 -2.0530003,0 -4.5720003,-1.25 -8.0000003,-1.25 -3.428,0 -5.947,1.25 -8,1.25 -2.053,0 -8,-1.619 -8,-9 0,-7 3,-10.8789997 3,-12.9999997 0,-1.233 -0.099,-11.937 1.375,-18.279 1.063,-4.568 2.482,-7.721 4.197,-7.721 1.713,0 1.627,5.93 2.414,10.227 0.786,4.297 2.729,9.773 5.014,9.773 2.285,0 3.268013,-5.734043 4.054013,-10.031043 0.787,-4.297 1.660987,-9.968957 3.3739873,-9.968957 1.715,0 3.135,3.153 4.197,7.721 1.474,6.342 1.375,17.046 1.375,18.279 0,2.121 3.00000002,5.9999997 3.00000002,12.9999997"
+         sodipodi:nodetypes="cssssscscscscsc" />
+    </g>
+  </g>
+</svg>

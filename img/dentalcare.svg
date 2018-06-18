@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="70mm"
+   height="94.993752mm"
+   viewBox="0 0 70 94.993752"
+   version="1.1"
+   id="svg4863"
+   inkscape:version="0.92.3pre0 (0ab9bec, 2018-03-03)"
+   sodipodi:docname="dentalcare.svg">
+  <defs
+     id="defs4857" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-348.01423"
+     inkscape:cy="494.71648"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     inkscape:window-width="1920"
+     inkscape:window-height="1036"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4860">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-47.85555,-153.19245)">
+    <g
+       transform="matrix(1.1717262,0,0,-1.1717262,104.98036,196.04124)"
+       id="g224"
+       style="fill:#00b0bd;fill-opacity:1">
+      <path
+         inkscape:connector-curvature="0"
+         id="path226"
+         style="fill:#00b0bd;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 0,0 c 0,-21.458 -17.601,-27.695 -17.787,-27.759 -0.067,-0.022 -0.138,-0.034 -0.212,-0.034 H -18 c -0.074,0 -0.146,0.012 -0.221,0.037 C -18.398,-27.695 -36,-21.458 -36,0 v 9.437 c 0,0.232 0.097,0.449 0.268,0.596 0.128,0.113 0.292,0.174 0.46,0.174 h 2.941 c 3.772,0 9.657,1.515 13.824,5.784 0.272,0.28 0.743,0.279 1.013,0.001 4.168,-4.27 10.053,-5.785 13.826,-5.785 h 2.941 c 0.168,0 0.331,-0.061 0.461,-0.175 C -0.097,9.887 0,9.669 0,9.437 Z m 1.046,11.543 c -0.493,0.428 -1.122,0.664 -1.773,0.664 h -2.941 c -3.385,0 -8.661,1.357 -12.395,5.183 -0.515,0.527 -1.226,0.817 -1.937,0.817 -0.711,0 -1.422,-0.29 -1.937,-0.818 -3.734,-3.825 -9.01,-5.182 -12.394,-5.182 h -2.941 c -0.651,0 -1.28,-0.236 -1.772,-0.663 C -37.651,11.018 -38,10.249 -38,9.437 V 0 c 0,-22.835 18.964,-29.594 19.136,-29.649 0.275,-0.095 0.566,-0.144 0.865,-0.144 0.296,0 0.587,0.048 0.845,0.138 C -16.963,-29.594 2,-22.835 2,0 v 9.437 c 0,0.813 -0.349,1.581 -0.954,2.106" />
+    </g>
+    <g
+       transform="matrix(1.1717262,0,0,-1.1717262,88.576191,188.76838)"
+       id="g228"
+       style="fill:#00b0bd;fill-opacity:1">
+      <path
+         inkscape:connector-curvature="0"
+         id="path230"
+         style="fill:#00b0bd;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 0,0 C -1.027,0 -2.285,-0.625 -4,-0.625 -5.715,-0.625 -6.973,0 -8,0 c -1.027,0 -4,-0.807 -4,-4.5 0,-3.5 1.5,-5.441 1.5,-6.5 0,-0.617 -0.051,-5.968 0.687,-9.139 0.532,-2.286 1.241,-3.861 2.098,-3.861 0.86,0 0.813,2.961 1.209,5.117 0.393,2.141 1.361,4.883 2.506,4.883 1.145,0 2.113,-2.742 2.506,-4.883 0.396,-2.156 0.349,-5.117 1.209,-5.117 0.857,0 1.566,1.575 2.097,3.861 C 2.551,-16.968 2.5,-11.617 2.5,-11 2.5,-9.941 4,-8 4,-4.5 4,-0.807 1.027,0 0,0" />
+    </g>
+  </g>
+</svg>
