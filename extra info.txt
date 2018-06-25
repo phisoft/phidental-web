@@ -1,0 +1,6 @@
+colour scheme
+red: #9A3334
+blue: #3399ff
+white: #f3efe0
+green: #217c7e
+
