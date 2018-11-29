@@ -1,5 +1,5 @@
 body {
-  background-color:#C5BD99;
+  background-color:#f1f8f9;
  font-size:1.8em;
  text-align: justify;
 }
@@ -9,8 +9,8 @@ h3 {
 }
 
 .header-background {
-  background-color: #c55454;
-  margin: auto;
+  background-color: #09729e;
+  color:white;
   max-width:100%;
 }
 
@@ -45,8 +45,6 @@ h3 {
   padding-bottom: 1em;
 }
 
-
-
 .menu-trigger {
   position: absolute;
   text-align: right;
@@ -57,10 +55,11 @@ h3 {
   border-radius: 0.4em;
   font-size: 0.9em;
   text-decoration: none;
+  color:#00acdb;
 }
 
 nav ul {
-  background-color:#C5CDD8;
+  background-color:#f1f8f9;
   max-width: 100%;
   text-align:center;
   text-transform:uppercase;
@@ -74,7 +73,7 @@ nav ul {
 nav li {
   max-width:100%;
   list-style-type: none;
-  padding: 0px 20px;
+  padding: 0px 0px;
   margin:0;
   float:left;
   color:black;
@@ -95,14 +94,14 @@ nav i {
 
 li a, .dropbtn {
     display: inline-block;
-    color: #3399ff;
-    text-align: center;
-    padding: 14px 16px;
+    color: black;
+    padding: 14px 20px;
     text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: #c55454;
+    background-color: #09729e;
+    color: white;
 }
 
 li.dropdown {
@@ -126,7 +125,7 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #09729e}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -168,7 +167,7 @@ li.dropdown {
 
 footer {
   margin-top: 3em;
-  background-color:#217c7e ;
+  background-color:#09729e ;
   min-height: 150px;
   padding: 1em;
   color: white;
@@ -223,25 +222,25 @@ footer a {
 }
 
 .active {
-background-color: #c55454;
+background-color: #00acdb;
 font-weight:bold;
 color:white;
 }
 
 .header-title {
   font-weight: bold;
-  color: #217c7e;
+  color: black;
   text-align: center;
   font-size: 2em;
   text-transform: uppercase;
-  background-color: white;
-  padding: 5px;
-
+  background-color: #f9f8f4;
+  padding: 25px;
+  border-width: thin;
 }
 
 .body-title{
   font-weight: bold;
-  color: #217c7e;
+  color: #09729e;
   font-size: 1.5em;
   font-style: italic;
 }

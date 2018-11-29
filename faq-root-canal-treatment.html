@@ -6,23 +6,38 @@
   <meta name="description" content="Lot2-33, Second floor, Suria Sabah Shopping Mall ,88000 Kota Kinabalu, Sabah. Malaysia ">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
+  <div class="container">
   <nav>
   <ul>
    <li><a href="index.html"> Home </a></li>
    <li><a href="about-us.html"> About Us </a><br/></li>
-   <li><a href="#services">  Services </a><br/></li>
+   <li class="dropdown"><a href="javascript:void(0)" class="dropbtn"> Services </a>
+    <div class="dropdown-content">
+        <a href="service-braces.html"> Braces </a>
+        <a href="service-dentures.html"> Dentures </a>
+        <a href="service-dental-implants.html"> Dental Implants </a>
+        <a href="service-invisalign.html"> Invisalign </a>
+        <a href="service-root-canal-treatment.html"> Root Canal Treatment </a>
+        <a href="service-scaling-and-polishing.html"> Scaling and Polishing </a>
+        <a href="service-teeth-whitening.html"> Teeth Whitening </a>
+        <a href="service-veneers.html"> Veneers</a>
+        <a href="service-wisdom-tooth-surgery.html"> Wisdom Tooth Surgery </a>
+    </div></li>
    <li><a href="#gallery">  Gallery </a><br/></li>
    <li><a href="#location"> Location </a><br/></li>
    <li><a href="#contact"> Contact Us </a><br/></li>
-   <li class="dropdown"><a href="javascript:void(0)" class="dropbtn"> FAQ ON </a> 
+   <li class="dropdown"><a href="javascript:void(0)" class="dropbtn"> FAQ  </a>
     <div class="dropdown-content">
         <a href="faq-braces.html"> Braces </a>
         <a href="faq-dentures.html"> Dentures </a>
@@ -36,32 +51,33 @@
     </div></li>
  </ul>
  </nav>
- <div class="header-background">
+</div>
+ <div class="header-background" style="text-align:center;padding-bottom:25px">
  <br/>
  <div class="container">
    <h4 style="text-decoration: line;"> Frequently Asked Questions on Root Canal Treatment </h4>
   </div>
   </div>
-  
+
   <br/>
 <div class="container">
   <div class="row">
     <div class="twelve columns">
       <b>Is Root Canal Treatment painful?</b><br/>
-      You may have heard from your friends that root canal treatment is very painful. Root canal treatment should be a pain free procedure with 
-      just local anaesthesia. The reason why some patients experience pain is because it is difficult to achieve profound anaesthesia for a tooth 
+      You may have heard from your friends that root canal treatment is very painful. Root canal treatment should be a pain free procedure with
+      just local anaesthesia. The reason why some patients experience pain is because it is difficult to achieve profound anaesthesia for a tooth
       with an acute abscess. In such situations a course of antibiotics will be prescribed. Treatment will be postponed till a few days later.<br/><br/><br/>
     </div>
   </div>
   <div class="row">
       <div class="twelve columns">
         <b>Can all teeth be treated with Root Canal Treatment?</b><br/>
-        Most teeth can be treated with root canal treatment. However, if there is a crack which extends beyond the crown of the tooth or if the 
-        root is fractured then the tooth cannot be saved. Your dentist will also ensure that the tooth has adequate bone support and can be restored 
+        Most teeth can be treated with root canal treatment. However, if there is a crack which extends beyond the crown of the tooth or if the
+        root is fractured then the tooth cannot be saved. Your dentist will also ensure that the tooth has adequate bone support and can be restored
         before proceeding with a root canal treatment.<br/><br/><br/>
       </div>
     </div>
-    
+
     <div class="row">
           <p>Other FAQ's on: </p>
           <div class="four columns">
@@ -79,7 +95,7 @@
               <li><a href="faq-veneers.html"> Veneers</a></li>
               <li><a href="faq-wisdom-tooth-surgery.html"> Wisdom Tooth Surgery </a></li>
           </ul></div>
-              
+
           </div>
     </div>
 </div>
@@ -115,7 +131,7 @@
 <script>
   $(document).ready(function(){
     $('.menu-trigger').click(function(){
-      $('nav').slideToggle(); 
+      $('nav').slideToggle();
       return false;
     })
   })

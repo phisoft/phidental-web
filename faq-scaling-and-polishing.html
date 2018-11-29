@@ -6,23 +6,38 @@
   <meta name="description" content="Lot2-33, Second floor, Suria Sabah Shopping Mall ,88000 Kota Kinabalu, Sabah. Malaysia ">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
+  <div class="container">
   <nav>
   <ul>
    <li><a href="index.html"> Home </a></li>
    <li><a href="about-us.html"> About Us </a><br/></li>
-   <li><a href="#services">  Services </a><br/></li>
+   <li class="dropdown"><a href="javascript:void(0)" class="dropbtn"> Services </a>
+    <div class="dropdown-content">
+        <a href="service-braces.html"> Braces </a>
+        <a href="service-dentures.html"> Dentures </a>
+        <a href="service-dental-implants.html"> Dental Implants </a>
+        <a href="service-invisalign.html"> Invisalign </a>
+        <a href="service-root-canal-treatment.html"> Root Canal Treatment </a>
+        <a href="service-scaling-and-polishing.html"> Scaling and Polishing </a>
+        <a href="service-teeth-whitening.html"> Teeth Whitening </a>
+        <a href="service-veneers.html"> Veneers</a>
+        <a href="service-wisdom-tooth-surgery.html"> Wisdom Tooth Surgery </a>
+    </div></li>
    <li><a href="#gallery">  Gallery </a><br/></li>
    <li><a href="#location"> Location </a><br/></li>
    <li><a href="#contact"> Contact Us </a><br/></li>
-   <li class="dropdown"><a href="javascript:void(0)" class="dropbtn"> FAQ ON </a> 
+   <li class="dropdown"><a href="javascript:void(0)" class="dropbtn"> FAQ </a>
     <div class="dropdown-content">
         <a href="faq-braces.html"> Braces </a>
         <a href="faq-dentures.html"> Dentures </a>
@@ -36,39 +51,40 @@
     </div></li>
  </ul>
  </nav>
- <div class="header-background">
+</div>
+ <div class="header-background" style="text-align:center;padding-bottom:25px">
  <br/>
  <div class="container">
    <h4 style="text-decoration: line;"> Frequently Asked Questions on Scaling and Polishing</h4>
   </div>
- </div> 
+ </div>
  <br/>
 <div class="container">
   <div class="row">
     <div class="twelve columns">
       <b >Will frequent Scaling and Polishing damage my teeth?</b><br/>
-      The process is perfectly safe and will not damage teeth. The instruments used are designed to remove hardened calculus effectively without 
+      The process is perfectly safe and will not damage teeth. The instruments used are designed to remove hardened calculus effectively without
       damaging the surface of the teeth.<br/><br/><br/>
     </div>
   </div>
   <div class="row">
       <div class="twelve columns">
         <b>How often should I have Scaling and Polishing done?</b><br/>
-        The frequency depends on the individual’s needs. For most people requiring regular maintenance, scaling and polishing should be done once 
+        The frequency depends on the individual’s needs. For most people requiring regular maintenance, scaling and polishing should be done once
         every 4 to 6 months.<br/><br/><br/>
       </div>
     </div>
     <div class="row">
         <div class="twelve columns">
           <b>Why is Scaling and Polishing necessary when I am already cleaning well at home?</b><br/>
-          The process removes hardened calculus that cannot be removed by simple tooth brushing at home. Good oral care maintenance at home is still 
+          The process removes hardened calculus that cannot be removed by simple tooth brushing at home. Good oral care maintenance at home is still
           important as it helps to prevent the formation of plaque, while scaling and polishing removes any calculus that has formed.<br/><br/><br/>
         </div>
     </div>
-    
+
     <div class="row">
           <p>Other FAQ's on: </p>
-          <div class="four columns"> 
+          <div class="four columns">
             <ul>
             <li><a href="faq-braces.html"> Braces </a></li>
             <li><a href="faq-dentures.html"> Dentures </a></li>
@@ -117,7 +133,7 @@
 <script>
   $(document).ready(function(){
     $('.menu-trigger').click(function(){
-      $('nav').slideToggle(); 
+      $('nav').slideToggle();
       return false;
     })
   })
