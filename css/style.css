@@ -1220,8 +1220,8 @@ p.wel-msg {
 /*---------------- Page Header ------------------------*/
 
 .page-header {
-	background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), rgba(0, 0, 0, 0.50) url(../images/page-header.jpg) no-repeat center;
-	background-size: cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.100), rgba(0, 0, 0, 0.50)), rgba(0, 0, 0, 0.50) url(../images/page-header2.jpg) no-repeat center;
+	background-size:1400px 500px;
 	color: #FFFFFF;
 	margin: 0;
 	border: none;
