@@ -27,7 +27,7 @@
   display: none;
 }
 #navmenu {
-  background: #207fdc;
+  background: #cc3333;
 }
 #navmenu > ul > li {
   float: left;
@@ -127,7 +127,7 @@
   text-decoration: none;
   color: #ffffff;
   font-weight: 500;
-  background: #207fdc;
+  background: #cc3333;
   line-height:.8;
 }
 #navmenu ul ul li:last-child > a,
@@ -295,7 +295,7 @@
   cursor: pointer;
 }
 #navmenu.small-screen .submenu-button.submenu-opened {
-  background: #207FDC;
+  background: #cc3333;
 }
 #navmenu.small-screen ul ul .submenu-button {
   height: 34px;
@@ -342,7 +342,7 @@
   padding:17px 5px;
 }
 .call-menu span{
-  background-color:#1d74ca;
+  background-color:#c54b4b;
   padding:12px 20px;
   display:block;
   border-radius:20px;
