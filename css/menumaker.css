@@ -295,7 +295,7 @@
   cursor: pointer;
 }
 #navmenu.small-screen .submenu-button.submenu-opened {
-  background: #cc3333;
+  background: #9f1d35;
 }
 #navmenu.small-screen ul ul .submenu-button {
   height: 34px;
@@ -342,7 +342,7 @@
   padding:17px 5px;
 }
 .call-menu span{
-  background-color:#c54b4b;
+  background-color:#9f1d35;
   padding:12px 20px;
   display:block;
   border-radius:20px;
