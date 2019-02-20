@@ -1,8 +1,0 @@
-colour scheme
-red: #9A3334
-blue: #3399ff
-white: #f3efe0
-green: #217c7e
-
-    	C5CDD8	A5B557	841F27	354E71
-    	424242	C5BD99	FFFFFF	701112
