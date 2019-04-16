@@ -102,7 +102,7 @@ a {
 }
 a:focus, a:hover {
 	text-decoration:none;
-	color:#1D74CA;
+	columns: #cc3333;
 }
 ::selection {
 	background:#E5F1F0;
@@ -156,7 +156,7 @@ hr {
 	background:#E5F1F0;
 }
 .bluebg {
-	background:#207FDC;
+	background:#cc3333;
 	color:#FFFFFF;
 }
 .black {
@@ -203,15 +203,15 @@ hr {
 }
 .btn-primary.focus, .btn-primary:focus {
 	color:#FFFFFF;
-	background-color: #196398;
+	background-color: #cc3333;
 	border:2px solid #C8D3DC;
 }
 .btn-secondary {
-	background-color:#074571;
+	background-color:#cc3333;
 	color:#FFFFFF;
 }
 .btn-secondary:hover {
-	background-color:#0B5386;
+	background-color:#cc3333;
 	color:#FFFFFF;
 }
 .btn-lg {
@@ -245,7 +245,7 @@ hr {
 }
 .btn-lineblue {
 	color:#FFFFFF;
-	border-bottom:4px solid #2481DC;
+	border-bottom:4px solid #cc3333;
 	border-radius:0px;
 	padding:13px 1px;
 	font-size: 17px;
@@ -319,7 +319,7 @@ p.wel-msg {
 .header:before {
 	content: '';
 	position: absolute;
-	background-color: #207FDC;
+	background-color: #cc3333;
 	right: 0;
 	left: 40%;
 	margin-left: -15px;
@@ -403,7 +403,7 @@ p.wel-msg {
 }
 .specialities-icon i {
 	font-size:54px;
-	color:#207FDC;
+	color:#cc3333;
 	line-height:1.1;
 	margin-left:0;
 }
@@ -511,8 +511,8 @@ p.wel-msg {
 }
 /*---------------------  department  ---------------------*/
 .department-section {
-	padding:200px 0 60px 0;
-	background:#207FDC;
+	padding:50px 0 60px 0;
+	background:#9f1d35;
 }
 .department-section .heading-title {
 	color:#FFFFFF;
@@ -684,7 +684,7 @@ p.wel-msg {
 }
 .blog-section-day {
 	font-size:83px;
-	color:#207FDC;
+	color:#cc3333;
 	font-weight:bold;
 	line-height:1;
 }
@@ -723,8 +723,8 @@ p.wel-msg {
 }
 /*---------------------  footer ---------------------*/
 .footer-section {
-	background:#1D3349;
-	color:#90A6BC;
+	background:#cc3333;
+	color:#C4DCF4;
 }
 .footer-widget {
 	margin-top:80px;
@@ -733,7 +733,7 @@ p.wel-msg {
 	color:#FFFFFF;
 }
 .footer-contact-box {
-	background: #207FDC;
+	background: #9f1d35;
 	margin-bottom: -84px;
 	margin-right: -45px;
 	padding: 80px 30px 74px;
@@ -766,7 +766,7 @@ p.wel-msg {
 	padding:10px 6px 0 6px;
 }
 .footer-social-box ul li a i {
-	color:#569ADD;
+	color:#C4DCF4;
 	font-size:22px;
 }
 .footer-social-box ul li a:hover i {
@@ -781,7 +781,7 @@ p.wel-msg {
 	position: absolute;
 	left: 0;
 	font-size: 15px;
-	color: #90A6BC;
+	color: #C4DCF4;
 	content: "\f105";
 }
 .footer-ul {
@@ -796,7 +796,7 @@ p.wel-msg {
 	font-size:15px;
 }
 .footer-menu li a {
-	color:#90A6BC;
+	color:#C4DCF4;
 	font-size:15px;
 }
 .footer-menu li a:hover {
@@ -835,11 +835,11 @@ p.wel-msg {
 	color:#47C93D;
 }
 .tiny-footer-section {
-	background:#132334;
+	background:#cc3333;
 }
 .tiny-footer-copyright {
 	font-size:15px;
-	color:#90A6BC;
+	color:#C4DCF4;
 	padding:30px 0;
 }
 /* ================================= */
@@ -848,7 +848,7 @@ p.wel-msg {
 
 /* -------------- topbar2 ----------------------- */ 
 .topbar2 {
-	background:#1D3349;
+	background:#9f1d35;
 }
 .topbar2 .wel-msg {
 	color:#9AACBD;
@@ -885,7 +885,7 @@ p.wel-msg {
 	padding: 15px 5px;
 }
 .emergency-menu span {
-	background-color: #1D74CA;
+	background-color:#9f1d35;
 	border-radius: 25px;
 	display: block;
 	padding: 12px 30px;
@@ -998,7 +998,7 @@ p.wel-msg {
 	background: transparent;
 }
 .department-nav li.active a, .department-nav li a:hover {
-	color:#207FDC;
+	color:#cc3333;
 	background: transparent;
 }
 .department-nav li a span {
@@ -1026,7 +1026,7 @@ p.wel-msg {
 }
 /* -------------- Home 2 About ------------------- */
 .about-style {
-	background:#207FDC;
+	background:#cc3333;
 }
 .about-style-content {
 	margin-top:50px;
@@ -1090,7 +1090,7 @@ p.wel-msg {
 }
 .left-quote {
 	font-size:140px;
-	color:#207FDC;
+	color:#cc3333;
 	font-weight:600;
 }
 .testimonial-style-box .testimonial-name::before {
@@ -1117,7 +1117,7 @@ p.wel-msg {
 }
 /* ------------------- footer-cta ------------------- */
 .footer-cta {
-	background:#207FDC;
+	background:#cc3333;
 }
 .footer-cta h1 {
 	color:#FFFFFF;
@@ -1478,7 +1478,7 @@ ul.dc-single-timetable {
 	font-size: 14px;
 }
 .pricing-table ul li span {
-	color:#207FDC;
+	color:#cc3333;
 }
 .price-dtl {
 	margin-bottom: 30px;
@@ -1500,7 +1500,7 @@ ul.dc-single-timetable {
 	margin-bottom: 30px;
 }
 .blog-date {
-	background-color: #207FDC;
+	background-color: #cc3333;
 	color: #FFFFFF;
 	height: 70px;
 	margin-right: 15px;
@@ -1679,7 +1679,7 @@ ul.meta-tag {
 	letter-spacing: -0.10px;
 }
 .tag-link:hover {
-	background:#207FDC;
+	background:#cc3333;
 	color: #fff;
 }
 /* ================================= */
@@ -1973,7 +1973,7 @@ ul.department-list li a:focus {
 	outline: 0;
 }
 ul.department-list li a:hover {
-	color: #207FDC;
+	color: #cc3333;
 }
 ul.department-list li i {
 	font-size: 26px;
