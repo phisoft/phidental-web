@@ -8,6 +8,7 @@
     <script type="text/javascript" src="jspdf.min.js"></script>
     <script type="text/javascript" src="jspdf.plugin.autotable.js"></script>
     <script type="text/javascript">
+
         
     function genPDF() {
 	
@@ -15,26 +16,51 @@ var imgData = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoYAAACpCAYAAAC27/y
 
 var doc = new jsPDF()
 
-doc.setFontSize(22);
+doc.setFontSize(25);
 doc.setFontStyle("bold");
-doc.text("Bill 00010",  196, 30, null, null, 'right');
-doc.addImage(imgData, 'png', 15, 20, 60, 20)
+doc.text("Bill",  200, 30, null, null, 'right');
+doc.addImage(imgData, 'JPEG', 15, 20, 60, 20)
 
 doc.setFontSize(15);
-doc.text("Phi Dental",  196, 45, null, null, 'right');
+doc.text("Phi Dental",  200, 45, null, null, 'right');
 doc.setFontSize(12);
 doc.setFontStyle("normal");
-doc.text("Lot2-33, Second floor, Suria Sabah Mall",  196, 50, null, null, 'right');
-doc.text("Phone: 088-265215",  196, 65, null, null, 'right');
+doc.text("Lot2-33, Second floor, Suria Sabah Mall,",  200, 50, null, null, 'right');
+doc.text("Kota Kinabalu, Sabah. 88000,",  200, 55, null, null, 'right');
+doc.text("Malaysia.",  200, 60, null, null, 'right');
+doc.text("Phone: 088-265215",  200, 65, null, null, 'right');
 doc.setFontStyle("underline")
-doc.text("www.phidental.my",  196, 70, null, null, 'right');
+doc.text("www.phidental.com",  200, 70, null, null, 'right');
+doc.line(0, 80, 300, 80);
+
+doc.setFontStyle("normal");
+doc.text('BILL TO:', 15, 90);
+doc.line(40, 90, 70, 90);
+doc.text('DATE: ', 140, 90);
+doc.line(160, 90, 190, 90);
 
 doc.autoTable({
-  margin: { top: 80 },
-  head: [['No', 'Item', 'Qty', 'Price', 'Amount']],
-  body: []
+  theme: 'grid',
+  margin: { top: 120 },
+  head: [['No', 'Description', 'Price(RM)']],
+  body: [
+            ['1', 'Braces', '500.00'],
+            ['2', 'Root canal', '80.00'],
+            ['3', '', ''],
+            ['4', '', ''],
+            ['5', '', ''],
+            [{content: 'Total', colSpan: 2, rowSpan: 2, styles: {halign: 'right' }}, '580.00']
+  ]
 })
 
+var numbers = [65, 44, 12, 4];
+
+function getSum(total, num) {
+  return total + num;
+}
+function myFunction(item) {
+  document.getElementById("Price(RM)").innerHTML = numbers.reduce(getSum);
+}
 
 doc.save('Phi Dental Bill.pdf');
 
