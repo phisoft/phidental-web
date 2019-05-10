@@ -18,49 +18,66 @@ var doc = new jsPDF()
 
 doc.setFontSize(25);
 doc.setFontStyle("bold");
-doc.text("Bill",  200, 30, null, null, 'right');
+doc.text("BILL",  190, 30, null, null, 'right');
 doc.addImage(imgData, 'JPEG', 15, 20, 60, 20)
 
+doc.setFontSize(8);
+doc.setFontStyle("bold");
+doc.text('DATE: ', 160, 40);
+doc.text('BILL #', 160, 45);
+
 doc.setFontSize(15);
-doc.text("Phi Dental",  200, 45, null, null, 'right');
+doc.text("Phi Dental",  195, 60, null, null, 'right');
 doc.setFontSize(12);
 doc.setFontStyle("normal");
-doc.text("Lot2-33, Second floor, Suria Sabah Mall,",  200, 50, null, null, 'right');
-doc.text("Kota Kinabalu, Sabah. 88000,",  200, 55, null, null, 'right');
-doc.text("Malaysia.",  200, 60, null, null, 'right');
-doc.text("Phone: 088-265215",  200, 65, null, null, 'right');
+doc.text("Lot2-33, Second floor, Suria Sabah Mall,",  195, 65, null, null, 'right');
+doc.text("Kota Kinabalu, Sabah. 88000,",  195, 70, null, null, 'right');
+doc.text("Malaysia",  195, 75, null, null, 'right');
+doc.text("Phone: 088-265215",  195, 80, null, null, 'right');
 doc.setFontStyle("underline")
-doc.text("www.phidental.com",  200, 70, null, null, 'right');
-doc.line(0, 80, 300, 80);
+doc.text("www.phidental.com",  195, 85, null, null, 'right');
 
 doc.setFontStyle("normal");
-doc.text('BILL TO:', 15, 90);
-doc.line(40, 90, 70, 90);
-doc.text('DATE: ', 140, 90);
-doc.line(160, 90, 190, 90);
+doc.text('BILL TO:', 15, 85);
+
+doc.setLineWidth(0.3)
+doc.line(41.7, 120, 41.7, 165.8)
+doc.setLineWidth(0.3)
+doc.line(129.2, 120, 129.2, 165.8)
+
+doc.setFontStyle("bold");
+doc.text("THANK YOU FOR YOUR BUSINESS!",  65, 260);
+
 
 doc.autoTable({
-  theme: 'grid',
+  /*didDrawCell: data => {
+      if (data.section === 'body' && data.column.index === 0) {
+         doc.addImagedoc.line(150, 120, 150, 170);
+      }
+   },*/
+
+  theme: 'plain',
+  headStyles: {halign: 'center', fillColor: 200 ,  lineColor: Color = 0},
+  tableLineWidth: number = 0.5,
   margin: { top: 120 },
-  head: [['No', 'Description', 'Price(RM)']],
+  head: [[{content: 'No', styles: { lineWidth: number = 0.3, lineColor: Color = 0 }}, {content: 'Description', styles: { lineWidth: number = 0.3, lineColor: Color = 0, minCellWidth: number = 20}}, {content: 'Price(RM)', styles: { lineWidth: number = 0.3, lineColor: Color = 0 }}]],
+  tableLineWidth: number = 0.3,
+  tableLineColor: Color = 0,
   body: [
-            ['1', 'Braces', '500.00'],
-            ['2', 'Root canal', '80.00'],
-            ['3', '', ''],
-            ['4', '', ''],
-            ['5', '', ''],
-            [{content: 'Total', colSpan: 2, rowSpan: 2, styles: {halign: 'right' }}, '580.00']
+            [{content: '1', styles: {halign: 'center'}}, {content: 'Braces', styles: { leftlineWidth: number = 1  }}, {content: '500.00', styles: { halign: 'center', lineWidth: number = 0  
+            }}],
+            [{content: '2', styles: {halign: 'center', lineWidth: number = 0  }}, {content: 'Root Canal', styles: { lineWidth: number = 0  }}, {content: '80.00', styles: { halign: 'center', lineWidth: number = 0  
+            }}],
+            [{content: '3', styles: {halign: 'center', lineWidth: number = 0  }}, {content: 'Teeth Remove', styles: { lineWidth: number = 0  }}, {content: '10.00', styles: {halign: 'center', lineWidth: number = 0 
+            }}],
+            [{content: '4', styles: {halign: 'center', lineWidth: number = 0  }}, {content: '', styles: { lineWidth: number = 0  }}, {content: '', styles: {halign: 'center', lineWidth: number = 0
+            }}],
+            [{content: '5', styles: {halign: 'center', lineWidth: number = 0  }}, {content: '', styles: { lineWidth: number = 0  }}, {content: '', styles: {halign: 'center', leftlineWidth: number = 1 
+            }}],
+            [{content: 'Total', colSpan: 2, rowSpan: 2, styles: {halign: 'right', lineWidth: number = 0.3, lineColor: Color = 0 }}, {content: '590.00', styles: {halign: 'center', lineWidth: number = 0.3 , lineColor: Color = 0}}]
   ]
 })
 
-var numbers = [65, 44, 12, 4];
-
-function getSum(total, num) {
-  return total + num;
-}
-function myFunction(item) {
-  document.getElementById("Price(RM)").innerHTML = numbers.reduce(getSum);
-}
 
 doc.save('Phi Dental Bill.pdf');
 
