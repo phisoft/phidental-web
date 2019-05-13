@@ -16,37 +16,38 @@ var imgData = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoYAAACpCAYAAAC27/y
 
 var doc = new jsPDF()
 
-doc.setFontSize(25);
+doc.setFontSize(22);
 doc.setFontStyle("bold");
-doc.text("BILL",  190, 30, null, null, 'right');
-doc.addImage(imgData, 'JPEG', 15, 20, 60, 20)
+doc.text("BILL",  195, 30, null, null, 'right');
+doc.addImage(imgData, 'JPEG', 15, 20, 65, 24)
 
-doc.setFontSize(8);
-doc.setFontStyle("bold");
-doc.text('DATE: ', 160, 40);
-doc.text('BILL #', 160, 45);
 
-doc.setFontSize(15);
-doc.text("Phi Dental",  195, 60, null, null, 'right');
-doc.setFontSize(12);
+doc.setFontSize(13);
+doc.text("Klinik Pergigian Phi",  195, 40, null, null, 'right');
+doc.setFontSize(11);
 doc.setFontStyle("normal");
-doc.text("Lot2-33, Second floor, Suria Sabah Mall,",  195, 65, null, null, 'right');
-doc.text("Kota Kinabalu, Sabah. 88000,",  195, 70, null, null, 'right');
-doc.text("Malaysia",  195, 75, null, null, 'right');
-doc.text("Phone: 088-265215",  195, 80, null, null, 'right');
+doc.text("Lot2-33, Second floor, Suria Sabah Mall,",  195, 45, null, null, 'right');
+doc.text("Kota Kinabalu, Sabah. 88000,",  195, 50, null, null, 'right');
+doc.text("Malaysia",  195, 55, null, null, 'right');
+doc.text("Phone: 088-265215",  195, 60, null, null, 'right');
 doc.setFontStyle("underline")
-doc.text("www.phidental.com",  195, 85, null, null, 'right');
+doc.text("www.phidental.com",  195, 65, null, null, 'right');
 
+doc.setLineWidth(0.5)
+doc.setDrawColor(200)
+doc.line(13, 75, 198, 75)
+
+doc.setFontSize(11);
 doc.setFontStyle("normal");
+doc.setFontStyle("bold");
 doc.text('BILL TO:', 15, 85);
-
-doc.setLineWidth(0.3)
-doc.line(41.7, 120, 41.7, 165.8)
-doc.setLineWidth(0.3)
-doc.line(129.2, 120, 129.2, 165.8)
+doc.text('Bill #', 150, 85);
+doc.text('Date ', 150, 90);
+doc.text('Due Date', 150, 95);
 
 doc.setFontStyle("bold");
-doc.text("THANK YOU FOR YOUR BUSINESS!",  65, 260);
+doc.setFontSize(12);
+doc.text("THANK YOU FOR YOUR BUSINESS!",  68, 260);
 
 
 doc.autoTable({
@@ -56,28 +57,21 @@ doc.autoTable({
       }
    },*/
 
-  theme: 'plain',
-  headStyles: {halign: 'center', fillColor: 200 ,  lineColor: Color = 0},
-  tableLineWidth: number = 0.5,
-  margin: { top: 120 },
-  head: [[{content: 'No', styles: { lineWidth: number = 0.3, lineColor: Color = 0 }}, {content: 'Description', styles: { lineWidth: number = 0.3, lineColor: Color = 0, minCellWidth: number = 20}}, {content: 'Price(RM)', styles: { lineWidth: number = 0.3, lineColor: Color = 0 }}]],
-  tableLineWidth: number = 0.3,
-  tableLineColor: Color = 0,
+  headStyles: {halign: 'center', fillColor: 200, textColor: 0 },
+  margin: { top: 100 },
+  head: [['Description',  'Quantity',  'Price', 'Amount']],
+  bodyStyles: {halign: 'center'},
   body: [
-            [{content: '1', styles: {halign: 'center'}}, {content: 'Braces', styles: { leftlineWidth: number = 1  }}, {content: '500.00', styles: { halign: 'center', lineWidth: number = 0  
-            }}],
-            [{content: '2', styles: {halign: 'center', lineWidth: number = 0  }}, {content: 'Root Canal', styles: { lineWidth: number = 0  }}, {content: '80.00', styles: { halign: 'center', lineWidth: number = 0  
-            }}],
-            [{content: '3', styles: {halign: 'center', lineWidth: number = 0  }}, {content: 'Teeth Remove', styles: { lineWidth: number = 0  }}, {content: '10.00', styles: {halign: 'center', lineWidth: number = 0 
-            }}],
-            [{content: '4', styles: {halign: 'center', lineWidth: number = 0  }}, {content: '', styles: { lineWidth: number = 0  }}, {content: '', styles: {halign: 'center', lineWidth: number = 0
-            }}],
-            [{content: '5', styles: {halign: 'center', lineWidth: number = 0  }}, {content: '', styles: { lineWidth: number = 0  }}, {content: '', styles: {halign: 'center', leftlineWidth: number = 1 
-            }}],
-            [{content: 'Total', colSpan: 2, rowSpan: 2, styles: {halign: 'right', lineWidth: number = 0.3, lineColor: Color = 0 }}, {content: '590.00', styles: {halign: 'center', lineWidth: number = 0.3 , lineColor: Color = 0}}]
+            [{content: 'Dental Consultation', styles: {halign: 'left'}}, '1','RM40.00','RM40.00'],
+            [{content: 'Dental Consultation', styles: { halign: 'left'}}, '1', 'RM30.00', 'RM30.00'],
+            [{content: 'Scaling and Airflow EMS', styles: {halign: 'left'}},  '1',  'RM200.00', 'RM200.00'],
+            [{content: 'Tooth polishing and prophylasis', styles: {halign: 'left' }}, '1', 'RM90.00', 'RM90.00'],
+            [{content: 'Composite Restoration 27(O)', styles: { halign: 'left' }}, '1', 'RM120.00', 'RM120.00'],
+            [{content: 'Subtotal :', colSpan: 3,  styles: {halign: 'right', fontStyle: 'bold'}}, {content: 'RM480.00', styles: {halign: 'center'}}],
+            [{content: 'Total :', colSpan: 3, styles: {halign: 'right', fontStyle: 'bold'}}, {content: 'RM480.00', styles: {halign: 'center'}}],
+            [{content: 'Amount Due :', colSpan: 3, styles: {halign: 'right', fontStyle: 'bold'}}, {content: 'RM0.00', styles: {halign: 'center'}}]
   ]
 })
-
 
 doc.save('Phi Dental Bill.pdf');
 
