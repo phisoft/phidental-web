@@ -27,7 +27,6 @@
   display: none;
 }
 #navmenu {
-  background: #cc3333;
 }
 #navmenu > ul > li {
   float: left;
@@ -50,7 +49,7 @@
   padding:29px 20px;
   font-size: 15px;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -125,9 +124,8 @@
   width: 170px;
   font-size: 16px;
   text-decoration: none;
-  color: #ffffff;
+  color: #000;
   font-weight: 500;
-  background: #cc3333;
   line-height:.8;
 }
 #navmenu ul ul li:last-child > a,
@@ -340,6 +338,7 @@
 }
 #navmenu > ul > li > a.call-menu{
   padding:17px 5px;
+  color: #fff;
 }
 .call-menu span{
   background-color:#9f1d35;
@@ -353,7 +352,8 @@
 
 @media only screen and (max-width: 768px) {
   #navmenu > ul > li > a {
-      padding:17px 17px;
+    padding:17px 17px;
+    color: #fff;
   }
   #navmenu ul ul li a{
     border-top:none;

@@ -285,12 +285,13 @@ hr {
 
 .topbar {
 	background-color: #EEF2F6;
+  background-color: #9F1D35;
 }
 .topbar-contact {
 	float: right;
 }
 .topbar-email {
-	border-right:1px solid #E3E3E3;
+	border-right: none;
 }
 .topbar-info {
 	padding:6px 20px;
@@ -298,6 +299,7 @@ hr {
 }
 .topbar-info a {
 	color:#5F7080;
+  color: #fff;
 	font-size:14px;
 	text-transform:uppercase;
 }
@@ -310,16 +312,26 @@ p.wel-msg {
 	padding-top:7px;
 	font-size:14px;
 	margin-bottom: 10px;
+  color: #fff;
 }
 /*---------------- Header ------------------*/
 
 .header {
 	position: relative;
+  background-color: #9f1d35;
+}
+.header.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #cc3333;
+}
+.header.container2 {
+  width: 1170px;
+  margin: auto;
 }
 .header:before {
 	content: '';
 	position: absolute;
-	background-color: #cc3333;
 	right: 0;
 	left: 40%;
 	margin-left: -15px;
@@ -512,13 +524,14 @@ p.wel-msg {
 /*---------------------  department  ---------------------*/
 .department-section {
 	padding:50px 0 60px 0;
-	background:#9f1d35;
+	background: #9f1d35;
+  background: #f0f0f0;
 }
 .department-section .heading-title {
-	color:#FFFFFF;
+	color:#333;
 }
 .department-section .sub-title {
-	color:#BED5EB;
+	color:#333;
 }
 .department-section h2 {
 	color:#FFFFFF;
@@ -527,7 +540,7 @@ p.wel-msg {
 	margin-bottom: 15px;
 }
 .department-section p {
-	color:#C8E1FA;
+	color:#333;
 }
 .department-inner-icon {
 	text-align: center;
@@ -538,7 +551,7 @@ p.wel-msg {
 	line-height:1.2;
 }
 .department-section h2 a {
-	color:#FFFFFF;
+	color:#333;
 }
 /*---------------------  doctor  ---------------------*/
 
@@ -723,17 +736,17 @@ p.wel-msg {
 }
 /*---------------------  footer ---------------------*/
 .footer-section {
-	background:#cc3333;
-	color:#C4DCF4;
+  background-color: #3f7a86;
 }
 .footer-widget {
 	margin-top:80px;
+  color: #fff;
 }
 .footer-section h2 {
 	color:#FFFFFF;
 }
 .footer-contact-box {
-	background: #9f1d35;
+  background: #3a727d;
 	margin-bottom: -84px;
 	margin-right: -45px;
 	padding: 80px 30px 74px;
@@ -835,7 +848,7 @@ p.wel-msg {
 	color:#47C93D;
 }
 .tiny-footer-section {
-	background:#cc3333;
+  background-color: #3f7a86;
 }
 .tiny-footer-copyright {
 	font-size:15px;
@@ -1220,8 +1233,10 @@ p.wel-msg {
 /*---------------- Page Header ------------------------*/
 
 .page-header {
-	background: linear-gradient(rgba(0, 0, 0, 0.100), rgba(0, 0, 0, 0.50)), rgba(0, 0, 0, 0.50) url(../images/page-header2.jpg) no-repeat center;
-	background-size:1400px 500px;
+  background-image: url('../images/dental.jpg');
+  background-position: 30% 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
 	color: #FFFFFF;
 	margin: 0;
 	border: none;
@@ -2170,6 +2185,7 @@ ul.department-list li.active a i {
 .menu-box {
 	float: left;
 	width: 100%;
+  background-color: #cc3333;
 }
 .about-whitebox {
 	padding: 60px 40px;
