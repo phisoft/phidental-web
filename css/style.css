@@ -345,7 +345,7 @@ p.wel-msg {
 /*---------------------  Slider  ---------------------*/
 .slider .item {
 	width: 100%;
-	height: 770px;
+	height: 500px;
 	background-position: 50% 0;
 	background-repeat: no-repeat;
 	background-size: cover;
