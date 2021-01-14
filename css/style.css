@@ -258,6 +258,20 @@ hr {
 	box-shadow:none;
 	color: #F5F5F5;
 }
+
+.slid-pic {
+	background-image: url('../images/homeb1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.slid-pic2 {
+	background-image: url('../images/homeb2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% center !important;
+}
 /* ================================= */
     /*===== Input =====*/
 /* ================================= */
