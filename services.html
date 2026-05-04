@@ -1,606 +1,1601 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<!-- head -->
-<head>
-<title>Phi Dental</title>
-<meta charset="utf-8" />
-<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<meta name="description" content="lamedic" />
-<meta name="keywords" content="mediline, html template, medical template, health template, bootstrap template, mediacal template, wellness">
-<meta name="author" content="udayraj" />
-<meta name="MobileOptimized" content="320" />
-<!-- favicon-icon -->
-<link rel="icon" type="image/icon" href="images/favicon/favicon.png">
-<!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<!-- Menu marker CSS -->
-<link href="css/fontello.css" rel="stylesheet">
-<!-- Template fonts -->
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800" rel="stylesheet">
-<!-- Font Awesome CSS -->
-<link href="css/font-awesome.min.css" rel="stylesheet">
-<!-- Font simple-line-icons CSS -->
-<link href="css/simple-line-icons.css" rel="stylesheet">
-<!-- Font Custom  CSS -->
-<link href="css/menumaker.css" rel="stylesheet">
-<!-- Template Style CSS -->
-<link href="css/style.css" rel="stylesheet">
-<!-- Stucture CSS -->
-<link href="css/stucture.css" rel="stylesheet">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-</head>
-<!-- /end head -->
-<body>
-<!--  Topbar -->
-<div class="topbar">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 col-sm-5">
-        <p class="wel-msg">Welcome to Phi Dental</p>
-      </div>
-      <div class="col-md-7 col-sm-7 hidden-xs">
-        <div class="topbar-contact">
-          <span class="topbar-email topbar-info"><a href="mailto://phidental13@gmail.com"><i class="fa fa-envelope"></i>phidental13@gmail.com</a></span>
-          <span class="topbar-info"><a href="https://web.facebook.com/phident/?_rdc=1&_rdr"><i class="fa fa fa-facebook"></i>Facebook</a></span>
-          <span class="topbar-info"><a href="https://instagram.com/phidental"><i class="fa fa fa-instagram"></i>instagram</a></span>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>
+            Our Services | Phi Dental - Professional Dental Care in Kota
+            Kinabalu, Sabah
+        </title>
+        <meta
+            name="description"
+            content="Explore Phi Dental's comprehensive dental services in Kota Kinabalu, Sabah. Braces, Invisalign, implants, root canal, teeth whitening, pediatric dentistry and more. Expert care 7 days a week."
+        />
+        <meta
+            name="keywords"
+            content="dental services Kota Kinabalu, braces KK, invisalign Sabah, dental implant, root canal treatment, teeth whitening, pediatric dentist, dentures, crown bridge, oral surgery, periodontal treatment, wisdom tooth extraction"
+        />
+        <meta name="author" content="Phi Dental" />
+        <meta name="MobileOptimized" content="320" />
+        <link rel="canonical" href="https://phidental.my/services.html" />
+        <link rel="icon" type="image/png" href="images/favicon/favicon.png" />
+        <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://phidental.my/services.html" />
+        <meta
+            property="og:title"
+            content="Our Services | Phi Dental - Professional Dental Care in Kota Kinabalu, Sabah"
+        />
+        <meta
+            property="og:description"
+            content="Explore Phi Dental's comprehensive dental services in Kota Kinabalu, Sabah. Braces, Invisalign, implants, root canal, teeth whitening, pediatric dentistry and more."
+        />
+        <meta
+            property="og:image"
+            content="https://phidental.my/images/logo_white.png"
+        />
+        <meta property="og:image:width" content="646" />
+        <meta property="og:image:height" content="169" />
+        <meta property="og:site_name" content="Phi Dental" />
+        <meta property="og:locale" content="en_MY" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Our Services | Phi Dental - Professional Dental Care in Kota Kinabalu, Sabah"
+        />
+        <meta
+            name="twitter:description"
+            content="Explore Phi Dental's comprehensive dental services in Kota Kinabalu, Sabah. Braces, Invisalign, implants, root canal, teeth whitening, pediatric dentistry and more."
+        />
+        <meta
+            name="twitter:image"
+            content="https://phidental.my/images/logo_white.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
+        <style>
+            section[id] {
+                scroll-margin-top: 80px;
+            }
+            .services-page-wrapper {
+                padding-top: var(--space-3xl);
+                padding-bottom: var(--space-4xl);
+            }
+            .services-sidebar {
+                position: sticky;
+                top: 90px;
+            }
+            .services-sidebar .department-nav {
+                border-radius: var(--radius-lg);
+                background-color: var(--color-light-bg);
+                overflow: hidden;
+            }
+            .services-sidebar .department-nav li a {
+                font-size: 0.875rem;
+                padding: 0.75rem 1.25rem;
+            }
+            .services-sidebar .department-nav li a .service-nav-icon {
+                width: 28px;
+                text-align: center;
+                color: var(--color-primary);
+                font-size: 1rem;
+                margin-right: 0.5rem;
+            }
+            .service-detail-card {
+                background-color: var(--color-white);
+                border-radius: var(--radius-lg);
+                box-shadow: var(--shadow-sm);
+                padding: var(--space-xl) var(--space-lg);
+                margin-bottom: var(--space-lg);
+                border: 1px solid rgba(0, 0, 0, 0.04);
+            }
+            .service-detail-card:last-child {
+                margin-bottom: 0;
+            }
+            .service-detail-card h2 {
+                font-family: var(--font-heading);
+                font-size: 1.65rem;
+                font-weight: 700;
+                color: var(--color-dark);
+                margin-bottom: var(--space-md);
+                padding-bottom: var(--space-sm);
+                border-bottom: 3px solid var(--color-primary-fade-2);
+            }
+            .service-detail-card h2 i {
+                color: var(--color-primary);
+                margin-right: 0.5rem;
+            }
+            .service-detail-card .service-desc {
+                color: var(--color-dark-light);
+                font-size: 0.9375rem;
+                line-height: 1.8;
+                margin-bottom: var(--space-lg);
+            }
+            .service-detail-card .service-subsection {
+                margin-bottom: var(--space-lg);
+            }
+            .service-detail-card .service-subsection:last-child {
+                margin-bottom: 0;
+            }
+            .service-detail-card .service-subsection h4 {
+                font-size: 1rem;
+                font-weight: 700;
+                color: var(--color-primary);
+                margin-bottom: var(--space-sm);
+            }
+            .service-detail-card .service-subsection h4 i {
+                margin-right: 0.375rem;
+            }
+            .service-detail-card ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .service-detail-card ul li {
+                padding: 0.35rem 0 0.35rem 1.5rem;
+                position: relative;
+                color: var(--color-dark-light);
+                font-size: 0.925rem;
+                line-height: 1.7;
+            }
+            .service-detail-card ul li::before {
+                content: "\f00c";
+                font-family: "FontAwesome";
+                position: absolute;
+                left: 0;
+                color: var(--color-secondary);
+                font-size: 0.8rem;
+            }
+            .service-detail-card ul.service-types li::before {
+                content: "\f0a4";
+                color: var(--color-primary);
+            }
+            .service-detail-card ul.service-steps {
+                counter-reset: step-counter;
+            }
+            .service-detail-card ul.service-steps li {
+                padding-left: 2.2rem;
+            }
+            .service-detail-card ul.service-steps li::before {
+                content: counter(step-counter);
+                counter-increment: step-counter;
+                background: var(--color-primary);
+                color: #fff;
+                font-size: 0.75rem;
+                font-weight: 600;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                left: 0;
+                top: 0.45rem;
+                font-family: "Inter", sans-serif;
+            }
+            .service-detail-card ul.service-benefits li::before {
+                content: "\f118";
+                color: var(--color-cta);
+            }
+            @media (max-width: 991px) {
+                .services-sidebar {
+                    position: relative;
+                    top: 0;
+                    margin-bottom: var(--space-lg);
+                }
+                .services-sidebar .department-nav {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .services-sidebar .department-nav li {
+                    flex: 1 1 50%;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+                }
+            }
+            @media (max-width: 576px) {
+                .services-sidebar .department-nav li {
+                    flex: 1 1 100%;
+                }
+                .service-detail-card {
+                    padding: var(--space-lg) var(--space-md);
+                }
+                .service-detail-card h2 {
+                    font-size: 1.35rem;
+                }
+            }
+        </style>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "MedicalWebPage",
+                "@id": "https://phidental.my/services.html",
+                "name": "Our Services - Phi Dental",
+                "url": "https://phidental.my/services.html",
+                "description": "Comprehensive dental services in Kota Kinabalu, Sabah including braces, implants, Invisalign, root canal, teeth whitening, pediatric dentistry and more.",
+                "isPartOf": {
+                    "@type": "Dentist",
+                    "@id": "https://phidental.my/",
+                    "name": "Phi Dental",
+                    "url": "https://phidental.my/",
+                    "logo": "https://phidental.my/images/logo_white.png",
+                    "image": "https://phidental.my/images/logo_white.png",
+                    "telephone": "+6 013-4103103",
+                    "email": "phidental13@gmail.com",
+                    "foundingDate": "2018",
+                    "priceRange": "$$",
+                    "sameAs": [
+                        "https://www.facebook.com/phident/",
+                        "https://instagram.com/phidental"
+                    ],
+                    "address": [
+                        {
+                            "@type": "PostalAddress",
+                            "name": "Suria Sabah",
+                            "streetAddress": "Lot 2-33, Second Floor, Suria Sabah Shopping Mall",
+                            "addressLocality": "Kota Kinabalu",
+                            "addressRegion": "Sabah",
+                            "postalCode": "88000",
+                            "addressCountry": "MY"
+                        },
+                        {
+                            "@type": "PostalAddress",
+                            "name": "Plaza333",
+                            "streetAddress": "Lot 79, Ground Floor, Block I, Lorong Plaza333-3A",
+                            "addressLocality": "Penampang",
+                            "addressRegion": "Sabah",
+                            "postalCode": "88950",
+                            "addressCountry": "MY"
+                        },
+                        {
+                            "@type": "PostalAddress",
+                            "name": "Taman Fortuna",
+                            "streetAddress": "Lot 8, Ground Floor, Lorong Bunga Seroja 1, Taman Fortuna Ph 2",
+                            "addressLocality": "Kota Kinabalu",
+                            "addressRegion": "Sabah",
+                            "postalCode": "88200",
+                            "addressCountry": "MY"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "itemListElement": [
+                        {
+                            "@type": "MedicalProcedure",
+                            "position": 1,
+                            "name": "Braces"
+                        },
+                        {
+                            "@type": "MedicalProcedure",
+                            "position": 2,
+                            "name": "Dentures"
+                        },
+                        {
+                            "@type": "MedicalProcedure",
+                            "position": 3,
+                            "name": "Dental Implant"
+                        },
+                        {
+                            "@type": "MedicalProcedure",
+                            "position": 4,
+                            "name": "Invisalign"
+                        },
+                        {
+                            "@type": "MedicalProcedure",
+                            "position": 5,
+                            "name": "Root Canal Treatment"
+                        },
+                        {
+                            "@type": "MedicalProcedure",
+                            "position": 6,
+                            "name": "Scaling and Polishing"
+                        },
+                        {
+                            "@type": "MedicalProcedure",
+                            "position": 7,
+                            "name": "Teeth Whitening"
+                        },
+                        {
+                            "@type": "MedicalProcedure",
+                            "position": 8,
+                            "name": "Wisdom Tooth Extraction"
+                        },
+                        {
+                            "@type": "MedicalProcedure",
+                            "position": 9,
+                            "name": "Crowns and Bridges"
+                        },
+                        {
+                            "@type": "MedicalProcedure",
+                            "position": 10,
+                            "name": "Pediatric Dentistry"
+                        },
+                        {
+                            "@type": "MedicalProcedure",
+                            "position": 11,
+                            "name": "Periodontal Treatment"
+                        },
+                        {
+                            "@type": "MedicalProcedure",
+                            "position": 12,
+                            "name": "Oral Surgery"
+                        }
+                    ]
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="preloader"><div class="preloader-spinner"></div></div>
+        <div class="topbar">
+            <div class="container">
+                <div class="wel-msg">Welcome to Phi Dental</div>
+                <div class="topbar-contact">
+                    <span class="topbar-email topbar-info"
+                        ><a
+                            href="mailto:phidental13@gmail.com"
+                            aria-label="Email"
+                            ><i class="fa fa-envelope" aria-hidden="true"></i>
+                            phidental13@gmail.com</a
+                        ></span
+                    >
+                    <span class="topbar-info"
+                        ><a
+                            href="https://www.facebook.com/phident/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook"
+                            ><i class="fa fa-facebook" aria-hidden="true"></i>
+                            Facebook</a
+                        ></span
+                    >
+                    <span class="topbar-info"
+                        ><a
+                            href="https://instagram.com/phidental"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                            ><i class="fa fa-instagram" aria-hidden="true"></i>
+                            Instagram</a
+                        ></span
+                    >
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /Topbar -->
-<!-- Header -->
-<div class="header">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <a class="navbar-brand" href="index.html"><img src="images/logo_white.png" style="width:192px;height:52px;" class="img-responsive" alt="Logo"></a>
-      </div>
-      <div class="col-md-9">
-        <div class="menu-box">
-          <div id="navmenu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="#" onclick="myFunction()">Gallery</a></li>
-                <li><a href="faq.html">FAQS</a></li>
-              <li class="pull-right">
-                <a href="#" class="call-menu"><span><i class="fa fa-volume-control-phone mr5"></i>+6 013-4103103</span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /Header -->
-<!-- Page Header -->
-<div class="page-header">
-  <div class="container">
-    <div class="row page-section">
-      <div class="col-md-8">
-        <h4>Our available</h4>
-        <h1>Services</h1>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /Page Header -->
-<!-- Department -->
-<div class="ptb80">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-12">
-        <h1 class="heading-title">Services</h1>
-        <h4 class="sub-title mb30"> </h4>
-      </div>
-      <div class="col-lg-3 col-md-3">
-        <ul class="department-list" role="tablist">
-          <li role="presentation" class="active">
-            <a href="#Braces" aria-controls="Braces" role="tab" data-toggle="tab">Braces</a>
-          </li>
-          <li role="presentation">
-            <a href="#Dentures" role="tab" data-toggle="tab"></i>Dentures</a>
-          </li>
-          <li role="presentation">
-            <a href="#dentalimplant" role="tab" data-toggle="tab"></i>Dental Implant</a>
-          </li>
-          <li role="presentation">
-            <a href="#Invisalign" role="tab" data-toggle="tab"></i>Invisalign</a>
-          </li>
-          <li role="presentation">
-            <a href="#rct" role="tab" data-toggle="tab"></i>Root Canal Treatment</a>
-          </li>
-          <li role="presentation">
-            <a href="#sap" role="tab" data-toggle="tab"></i>Scaling And Polishing</a>
-          </li>
-          <li role="presentation">
-            <a href="#teethwhitening" role="tab" data-toggle="tab"></i>Teeth Whitening</a>
-          </li>
-          <li role="presentation">
-            <a href="#veneers" role="tab" data-toggle="tab"></i>Veneers</a>
-          </li>
-          <li role="presentation">
-            <a href="#wts" role="tab" data-toggle="tab"></i>Wisdom Tooth Surgery</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-9 col-md-9">
-        <div class="department-list-panel">
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="Braces">
-              <h1 class="department-title">Braces</h1>
-              <p>Dental braces are orthodontic appliances designed to straighten and improve the aesthetics and function of your teeth. This benefits children as straight teeth are easier to clean. In addition, after the teeth have been straightened, there is usually an increase in overall self-esteem and confidence level. If your child is from age 6 to 10, you can consider Myobrace to correct the growth and development of his/her teeth.
-                The braces process can be uncomfortable when the teeth are being moved. Braces can also trap more food than usual, so great attention to good oral hygiene is required to prevent tooth decay and gum disease. The common types of braces include the traditional metal braces, ceramic braces and self-ligating braces. For aesthetics reasons, there are also invisible or clear braces (a more commonly known brand is Invisalign) options. </p>
-              <p><strong>Flexible Payment Arrangements with no hidden charges</strong></p>
-              <p>We promise to deliver the highest possible level of quality care to our patients and aim to provide you with the best value for your investment in our services. Our prices reflect the whole package which includes all x-rays, follow-up consultations, impressions, retainers and braces for both upper and lower arches. There are simply no hidden charges. The option to break down the payment into progressive payments is also available for our patients who are more comfortable with partial payment plans.</p>
-              
-              <p><strong>Common Orthodontic Issues</strong></p>
-              <ul>
-                <li>Crooked or spaced out teeth</li>
-                <li>Protruding teeth</li>
-                <li>Improper bites</li>
-                <li>Jaw disharmonies</li>
-              </ul>
-          
-              <p><strong>Benefits of Braces</strong></p>
-              <ul>
-                <li>Improve aesthetics of the teeth</li>
-                <li>Increase self confidence</li>
-                <li>Easier to keep teeth clean</li>
-                <li>Healthy teeth and gums</li>
-              </ul>
-
-              <p><strong>Treatment Process</strong></p>
-              <ol>
-                <li>Initial consultation and assessment</li>
-                <li>Impressions and X-rays</li>
-                <li>Installation of braces</li>
-                <li>Regular reviews</li>
-                <li>Removal of braces</li>
-                <li>Retainers</li>
-              </ol>
-
-            <b>Type of Braces</b>
-            <br>
-            <ol>
-              <li>
-                <b>Metal Braces</b>
-                <br>
-                Metal braces are the most common and affordable type of braces. These braces are made of high-grade stainless steel. Metal braces are attached to the teeth and are not removable by the patient. There are also wires that are held onto the braces with colourful rubber bands. Metal braces are most popular with teenagers who like to decorate their teeth and braces with colours. However, the braces have a certain thickness and patients usually take a week or two to get used to the braces in the mouth.
-              </li>
-
-              <li>
-                <b>Ceramic Braces</b>
-                <br>
-                Ceramic braces are made from tooth-coloured materials that blend in naturally with the colour of teeth. These braces are more aesthetically pleasing when compared to metal braces; making it a popular choice for patients who want some form of aesthetic and less visible braces. The ceramic material used in the braces are stain resistant and do not discolour easily. However, like metal braces these ceramic braces also have a certain thickness that takes some getting used to.
-              </li>
-
-              <li>
-                <b>Self-Ligating Braces</b>
-                <br>
-                Self-ligating braces are slightly different from the conventional metal or ceramic braces described earlier. These braces are also attached onto the teeth; however, the wires are held onto the braces using a “gate” that is built into the braces, hence the term self-ligating. This reduces the need for rubber bands and thus there is less friction in the whole braces system. This allows for lighter forces to be used on the teeth, and often translates to more comfortable treatment. 
-              </li>
-
-              <li>
-                <b>Invisible Braces</b>
-                <br>
-                Invisible braces are suitable for patients who have the desire to solve their orthodontics concerns but are conscious of the stigma that the wearing of visible braces presents. The aligners are made of transparent and pliable material. They provide a discreet, natural appearance, and when worn there is a significant decrease in discomfort then those present in traditional braces. The aligners are removable to allow for the convenient cleaning of teeth and comfortable consumption of food. However, because these aligners are removable, patients have to be consistent and disciplined with the compliance of their treatment plans.
-              </li>
-            </ol>
-
-            <p><strong>Cost of Braces (Orthodontic) Treatment</strong></p>
-              <p>The price of orthodontic treatment varies according to each patient’s needs. As each individual is unique, there will be differing goals of treatment depending on the presenting clinical situation. Our clinicians will advise you on the most suitable type of braces treatment. The cost of treatment will be discussed once all the information required is established.</p>
-
+        <header class="header" id="header">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"
+                    ><img
+                        src="images/logo2.png"
+                        width="192"
+                        height="52"
+                        class="img-responsive"
+                        alt="Phi Dental Logo"
+                /></a>
+                <button
+                    class="hamburger-menu"
+                    id="hamburger"
+                    aria-label="Menu"
+                    aria-expanded="false"
+                >
+                    <span></span><span></span><span></span>
+                </button>
+                <nav id="navmenu" aria-label="Main">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li>
+                            <a href="services.html" class="active">Services</a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://instagram.com/phidental"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >Gallery</a
+                            >
+                        </li>
+                        <li><a href="index.html#faq">FAQs</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                        <li>
+                            <a href="tel:+60134103103" class="call-menu"
+                                ><span
+                                    ><i
+                                        class="fa fa-phone"
+                                        aria-hidden="true"
+                                    ></i>
+                                    +6 013-4103103</span
+                                ></a
+                            >
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div role="tabpanel" class="tab-pane" id="Dentures">
-              <h1 class="department-title"></i>Dentures</h1>
-              <p>With the loss of multiple teeth and as the aging process sets in, you may experience not only the loss of the ability to chew, you will lose the confidence to smile too. Further loss of facial muscle support and tone may cause your face to look ‘saggy’ and old. Speech may also be affect due to spaces formed in the gaps of missing teeth especially if they are in front.
-                Dentures can restore all these problems for you. Often used together with implant therapy, Dentures users today can enjoy their food, smile and laugh confidently without fear of them breaking or coming loose.</p>
-                
-                <p><strong>Benefits of Dentures</strong></p>
-                <ul>
-                  <li>Helps to restore any unsightly gaps in your smile.</li>
-                  <li>Restores function so that you can eat well.</li>
-                  <li>Support facial muscles or structures which may have collapsed due to the loss of multiple teeth and their surrounding jaw bone</li>
-                </ul>
+        </header>
+        <div class="mobile-overlay" id="mobileOverlay"></div>
 
-                <p><strong>Treatment Procedures</strong></p>
-              <ol>
-                <li>Consultation appointment (Approximately 30 mins)</li>
-                <li>Detailed examination and analysis of your occlusion (bite). To check for any parafunction (like night-grinding/clenching)</li>
-                <li>Dentures usually require several visits.</li>
-                <li>Our dentists need to make detailed measurements of your teeth, gums and jaw, especially if used in combination with implants. This is to ensure that your dentures are well-fitted, secure and comfortable.</li>
-              </ol>
-
-              <p><strong>Benefits of Dentures</strong></p>
-              <p>As costs varies due to the complexity of the case and number of missing teeth, do consult our dentists for a quotation.</p>
+        <section class="page-header" aria-label="Page Header">
+            <div class="container">
+                <div class="page-section">
+                    <h1>Our Services</h1>
+                    <h4>Professional dental care tailored to you</h4>
+                </div>
             </div>
+        </section>
+        <section class="services-page-wrapper" aria-label="Services List">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="services-sidebar">
+                            <ul
+                                class="department-nav listnone"
+                                id="servicesNav"
+                            >
+                                <li>
+                                    <a href="#service-braces" class="active"
+                                        ><span class="service-nav-icon"
+                                            ><i class="fa fa-asterisk"></i
+                                        ></span>
+                                        Braces</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#service-dentures"
+                                        ><span class="service-nav-icon"
+                                            ><i class="fa fa-tint"></i
+                                        ></span>
+                                        Dentures</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#service-implant"
+                                        ><span class="service-nav-icon"
+                                            ><i class="fa fa-medkit"></i
+                                        ></span>
+                                        Dental Implant</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#service-invisalign"
+                                        ><span class="service-nav-icon"
+                                            ><i class="fa fa-eye-slash"></i
+                                        ></span>
+                                        Invisalign</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#service-root-canal"
+                                        ><span class="service-nav-icon"
+                                            ><i class="fa fa-flask"></i
+                                        ></span>
+                                        Root Canal</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#service-scaling"
+                                        ><span class="service-nav-icon"
+                                            ><i class="fa fa-eraser"></i
+                                        ></span>
+                                        Scaling &amp; Polishing</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#service-whitening"
+                                        ><span class="service-nav-icon"
+                                            ><i class="fa fa-sun-o"></i
+                                        ></span>
+                                        Teeth Whitening</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#service-wisdom"
+                                        ><span class="service-nav-icon"
+                                            ><i class="fa fa-scissors"></i
+                                        ></span>
+                                        Wisdom Tooth Extraction</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#service-crowns"
+                                        ><span class="service-nav-icon"
+                                            ><i class="fa fa-diamond"></i
+                                        ></span>
+                                        Crowns &amp; Bridges</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#service-pediatric"
+                                        ><span class="service-nav-icon"
+                                            ><i class="fa fa-child"></i
+                                        ></span>
+                                        Pediatric Dentistry</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#service-periodontal"
+                                        ><span class="service-nav-icon"
+                                            ><i class="fa fa-heartbeat"></i
+                                        ></span>
+                                        Periodontal Treatment</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#service-oral-surgery"
+                                        ><span class="service-nav-icon"
+                                            ><i class="fa fa-hospital-o"></i
+                                        ></span>
+                                        Oral Surgery</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <!-- Braces -->
+                        <div class="service-detail-card" id="service-braces">
+                            <h2><i class="fa-asterisk"></i> Braces</h2>
+                            <p class="service-desc">
+                                Dental braces are orthodontic appliances
+                                designed to straighten and improve the
+                                aesthetics and alignment of your teeth. They
+                                work by applying gentle, consistent pressure to
+                                gradually move teeth into their proper
+                                positions, correcting a wide range of dental
+                                issues including crowding, spacing, overbites,
+                                underbites, and crossbites.
+                            </p>
+                            <div class="service-subsection">
+                                <h4><i class="fa-tags"></i> Types of Braces</h4>
+                                <ul class="service-types">
+                                    <li>
+                                        Metal braces &ndash; Traditional
+                                        stainless steel brackets with metal
+                                        wires; the most common and
+                                        cost-effective option.
+                                    </li>
+                                    <li>
+                                        Ceramic braces &ndash; Tooth-coloured or
+                                        clear brackets that blend with your
+                                        teeth for a more discreet appearance.
+                                    </li>
+                                    <li>
+                                        Self-ligating braces &ndash; Use a
+                                        specialised clip instead of elastic
+                                        bands to hold the wire, reducing
+                                        friction and treatment time.
+                                    </li>
+                                    <li>
+                                        Lingual braces &ndash; Custom-made
+                                        brackets placed on the back (lingual
+                                        side) of teeth, completely hidden from
+                                        view.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4>
+                                    <i class="fa-list-ol"></i> Treatment Process
+                                </h4>
+                                <ul class="service-steps">
+                                    <li>
+                                        Consultation &amp; assessment including
+                                        X-rays and impressions of your teeth.
+                                    </li>
+                                    <li>
+                                        Fitting of braces &ndash; brackets are
+                                        bonded to teeth and archwires are
+                                        inserted.
+                                    </li>
+                                    <li>
+                                        Regular adjustments every 4-6 weeks to
+                                        progressively align teeth.
+                                    </li>
+                                    <li>
+                                        Retention phase after braces removal
+                                        using retainers to maintain results.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4><i class="fa-star"></i> Benefits</h4>
+                                <ul class="service-benefits">
+                                    <li>
+                                        Improved oral health with better access
+                                        for cleaning straight teeth.
+                                    </li>
+                                    <li>
+                                        Better chewing function and clearer
+                                        speech.
+                                    </li>
+                                    <li>
+                                        Enhanced facial aesthetics and a
+                                        confident smile.
+                                    </li>
+                                    <li>
+                                        Increased self-confidence and overall
+                                        quality of life.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-            <div role="tabpanel" class="tab-pane" id="dentalimplant">
-              <h1 class="department-title"></i>Dental Implant</h1>
-              <p>Implant dentistry is a specialised field for the replacement of missing teeth. This is done with titanium fixtures placed in the jawbone. These fixtures are used to support missing teeth.
-                 Dentists will place the titanium fixtures and some time is necessary for the bone to heal completely around these fixtures, after which crowns can be placed via intermediate abutments.
-                 The use of specialised computer software and digital 3-dimensional x-ray facility has allowed our dentists to plan and perform implant surgeries in a virtual space. This serves to prepare our dentists during the performance of the actual surgery and hence improves the safety and predictability of implant treatment. Specialised laboratory equipment and trained technicians are available to ensure a precise fit and the quality of your new teeth.</p>
+                        <!-- Dentures -->
+                        <div class="service-detail-card" id="service-dentures">
+                            <h2><i class="fa-tint"></i> Dentures</h2>
+                            <p class="service-desc">
+                                Dentures are custom-made removable appliances
+                                designed to replace missing teeth and restore
+                                both function and aesthetics. Whether you need
+                                to replace a few teeth or an entire arch, modern
+                                dentures provide a natural-looking and
+                                comfortable solution.
+                            </p>
+                            <div class="service-subsection">
+                                <h4>
+                                    <i class="fa-tags"></i> Types of Dentures
+                                </h4>
+                                <ul class="service-types">
+                                    <li>
+                                        Complete dentures &ndash; Full arch
+                                        replacement for patients who have lost
+                                        all teeth in either the upper or lower
+                                        jaw.
+                                    </li>
+                                    <li>
+                                        Partial dentures &ndash; Replace one or
+                                        more missing teeth while clasping onto
+                                        remaining natural teeth.
+                                    </li>
+                                    <li>
+                                        Immediate dentures &ndash; Placed
+                                        immediately after tooth extraction,
+                                        allowing you to have teeth during the
+                                        healing period.
+                                    </li>
+                                    <li>
+                                        Implant-supported dentures &ndash; Snap
+                                        onto dental implants for superior
+                                        stability and retention.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4><i class="fa-star"></i> Benefits</h4>
+                                <ul class="service-benefits">
+                                    <li>
+                                        Restored ability to eat and speak
+                                        properly with confidence.
+                                    </li>
+                                    <li>
+                                        Improved facial appearance by supporting
+                                        lips and cheeks.
+                                    </li>
+                                    <li>
+                                        Prevents sagging of facial muscles and
+                                        provides structure.
+                                    </li>
+                                    <li>
+                                        Affordable tooth replacement option
+                                        compared to alternatives.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
+                        <!-- Dental Implant -->
+                        <div class="service-detail-card" id="service-implant">
+                            <h2><i class="fa-medkit"></i> Dental Implant</h2>
+                            <p class="service-desc">
+                                Implant dentistry is a specialised field for the
+                                replacement of missing teeth. It involves the
+                                surgical placement of titanium implants into the
+                                jawbone, which act as artificial tooth roots,
+                                providing a strong and permanent foundation for
+                                replacement teeth.
+                            </p>
+                            <div class="service-subsection">
+                                <h4>
+                                    <i class="fa-tags"></i> Types of Implant
+                                    Solutions
+                                </h4>
+                                <ul class="service-types">
+                                    <li>
+                                        Single tooth implant &ndash; Replaces a
+                                        single missing tooth with a crown
+                                        attached to the implant.
+                                    </li>
+                                    <li>
+                                        Multiple tooth implant &ndash; Replaces
+                                        several missing teeth using multiple
+                                        implants and a bridge.
+                                    </li>
+                                    <li>
+                                        All-on-4 / All-on-6 &ndash; Full arch
+                                        restoration using 4 or 6 strategically
+                                        placed implants to support a complete
+                                        set of teeth.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4><i class="fa-list-ol"></i> Procedure</h4>
+                                <ul class="service-steps">
+                                    <li>
+                                        Initial consultation with X-ray and 3D
+                                        imaging to assess bone density.
+                                    </li>
+                                    <li>
+                                        Implant placement surgery &ndash;
+                                        titanium post is surgically inserted
+                                        into the jawbone.
+                                    </li>
+                                    <li>
+                                        Osseointegration period (3-6 months) for
+                                        the bone to fuse with the implant.
+                                    </li>
+                                    <li>
+                                        Crown or bridge attachment to complete
+                                        the restoration.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4><i class="fa-star"></i> Benefits</h4>
+                                <ul class="service-benefits">
+                                    <li>
+                                        Permanent solution that can last a
+                                        lifetime with proper care.
+                                    </li>
+                                    <li>
+                                        Natural look and feel &ndash; virtually
+                                        indistinguishable from natural teeth.
+                                    </li>
+                                    <li>
+                                        Preserves jawbone and prevents bone loss
+                                        over time.
+                                    </li>
+                                    <li>
+                                        No damage to adjacent teeth unlike
+                                        traditional bridges.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-              <p><strong>Benefits of Dentures</strong></p>
-                <ul>
-                  <li><strong>Improve chewing efficiency</strong></li>
-                  Dental implants allow for the application of higher bite force when compared to dentures. Hence, patients with implants can chew with better efficiency. This will translate to food tasting better.
+                        <!-- Invisalign -->
+                        <div
+                            class="service-detail-card"
+                            id="service-invisalign"
+                        >
+                            <h2><i class="fa-eye-slash"></i> Invisalign</h2>
+                            <p class="service-desc">
+                                Invisalign (invisible braces) uses a series of
+                                transparent, removable orthodontic aligners to
+                                gradually move your teeth into the desired
+                                position. Each set of custom-made aligners is
+                                worn for about two weeks before progressing to
+                                the next set in the treatment plan.
+                            </p>
+                            <div class="service-subsection">
+                                <h4>
+                                    <i class="fa-list-ol"></i> Treatment Process
+                                </h4>
+                                <ul class="service-steps">
+                                    <li>
+                                        Digital scan &amp; 3D treatment plan to
+                                        visualise your smile transformation.
+                                    </li>
+                                    <li>
+                                        Custom aligner fabrication based on your
+                                        unique dental anatomy.
+                                    </li>
+                                    <li>
+                                        Wear each set of aligners for 2 weeks,
+                                        removing only for eating and brushing.
+                                    </li>
+                                    <li>
+                                        Regular check-ups every 6-8 weeks to
+                                        monitor progress and receive new
+                                        aligners.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4><i class="fa-star"></i> Benefits</h4>
+                                <ul class="service-benefits">
+                                    <li>
+                                        Nearly invisible appearance &ndash; most
+                                        people won't even notice you're wearing
+                                        them.
+                                    </li>
+                                    <li>
+                                        Removable for eating, brushing, and
+                                        flossing; no dietary restrictions.
+                                    </li>
+                                    <li>
+                                        More comfortable than metal braces with
+                                        no wires or brackets to irritate.
+                                    </li>
+                                    <li>
+                                        Fewer dental visits needed compared to
+                                        traditional braces.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                  <li><strong>No pain from dentures</strong></li>
-                  Loose and ill-fitting dentures can cause ulcers and cuts into the gum tissue. Using implants, the denture can be secured and hence, prevents such painful daily experience.
+                        <!-- Root Canal Treatment -->
+                        <div
+                            class="service-detail-card"
+                            id="service-root-canal"
+                        >
+                            <h2>
+                                <i class="fa-flask"></i> Root Canal Treatment
+                            </h2>
+                            <p class="service-desc">
+                                Root canal treatment (endodontic therapy)
+                                eliminates infection that has reached the tooth
+                                nerve (pulp). The procedure involves removing
+                                the infected pulp, thoroughly cleaning and
+                                disinfecting the root canals, and sealing them
+                                to prevent reinfection.
+                            </p>
+                            <div class="service-subsection">
+                                <h4>
+                                    <i class="fa-list-ol"></i> Treatment Steps
+                                </h4>
+                                <ul class="service-steps">
+                                    <li>
+                                        Diagnosis &amp; X-ray to assess the
+                                        extent of infection and root canal
+                                        anatomy.
+                                    </li>
+                                    <li>
+                                        Local anesthesia and tooth isolation
+                                        with a rubber dam for comfort.
+                                    </li>
+                                    <li>
+                                        Removal of infected pulp tissue from the
+                                        pulp chamber and root canals.
+                                    </li>
+                                    <li>
+                                        Cleaning and shaping of root canals
+                                        using specialised instruments.
+                                    </li>
+                                    <li>
+                                        Filling with gutta-percha to seal the
+                                        canals and prevent reinfection.
+                                    </li>
+                                    <li>
+                                        Crown placement for protection and
+                                        restoration of full function.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4><i class="fa-star"></i> Benefits</h4>
+                                <ul class="service-benefits">
+                                    <li>
+                                        Saves your natural tooth, avoiding
+                                        extraction whenever possible.
+                                    </li>
+                                    <li>
+                                        Eliminates pain and discomfort caused by
+                                        infection or inflammation.
+                                    </li>
+                                    <li>
+                                        Prevents the spread of infection to
+                                        surrounding teeth and jawbone.
+                                    </li>
+                                    <li>
+                                        Restores normal chewing function with a
+                                        fully protected tooth.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
+                        <!-- Scaling and Polishing -->
+                        <div class="service-detail-card" id="service-scaling">
+                            <h2>
+                                <i class="fa-eraser"></i> Scaling and Polishing
+                            </h2>
+                            <p class="service-desc">
+                                Professional dental cleaning involves the
+                                removal of plaque, tartar (calculus), and stains
+                                from the surfaces of your teeth. Scaling removes
+                                hardened deposits above and below the gumline,
+                                while polishing smooths the tooth surfaces for a
+                                brighter, cleaner finish.
+                            </p>
+                            <div class="service-subsection">
+                                <h4><i class="fa-star"></i> Benefits</h4>
+                                <ul class="service-benefits">
+                                    <li>
+                                        Prevents gum disease by removing
+                                        bacteria-harbouring deposits.
+                                    </li>
+                                    <li>
+                                        Prevents tooth decay and cavities
+                                        formation.
+                                    </li>
+                                    <li>
+                                        Fresher breath by eliminating
+                                        odour-causing bacteria.
+                                    </li>
+                                    <li>
+                                        Brighter, cleaner smile with stain
+                                        removal.
+                                    </li>
+                                    <li>
+                                        Early detection of dental issues during
+                                        routine examination.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4>
+                                    <i class="fa-clock-o"></i> Recommended
+                                    Frequency
+                                </h4>
+                                <ul>
+                                    <li>
+                                        Every <strong>6 months</strong> for
+                                        optimal oral health maintenance.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                  <li><strong>Anti-aging effect</strong></li>
-                  The loss of teeth leads to a “sunken-in” appearance, which is typically associated with aging. When patients replace their teeth, these teeth will support the lips and cheeks that results in a more desirable appearance.
+                        <!-- Teeth Whitening -->
+                        <div class="service-detail-card" id="service-whitening">
+                            <h2><i class="fa-sun-o"></i> Teeth Whitening</h2>
+                            <p class="service-desc">
+                                Professional teeth whitening treatments are
+                                designed to lighten discoloured or stained teeth
+                                for a brighter, more youthful smile. We offer
+                                both in-clinic and take-home whitening options
+                                using professional-grade materials for safe and
+                                effective results.
+                            </p>
+                            <div class="service-subsection">
+                                <h4>
+                                    <i class="fa-tags"></i> Whitening Options
+                                </h4>
+                                <ul class="service-types">
+                                    <li>
+                                        In-office laser whitening &ndash; Fast,
+                                        professional treatment with dramatic
+                                        results in a single session.
+                                    </li>
+                                    <li>
+                                        Custom take-home trays &ndash;
+                                        Professionally fabricated trays with
+                                        whitening gel for gradual, controlled
+                                        whitening at your convenience.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4><i class="fa-star"></i> Benefits</h4>
+                                <ul class="service-benefits">
+                                    <li>
+                                        Professional-grade whitening materials
+                                        for superior results.
+                                    </li>
+                                    <li>
+                                        Faster, more noticeable results compared
+                                        to over-the-counter products.
+                                    </li>
+                                    <li>
+                                        Safe and supervised by our dental
+                                        professionals.
+                                    </li>
+                                    <li>
+                                        Long-lasting results with proper
+                                        aftercare maintenance.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
+                        <!-- Wisdom Tooth Extraction -->
+                        <div class="service-detail-card" id="service-wisdom">
+                            <h2>
+                                <i class="fa-scissors"></i> Wisdom Tooth
+                                Extraction
+                            </h2>
+                            <p class="service-desc">
+                                Wisdom tooth extraction is a surgical procedure
+                                to remove one or more wisdom teeth (third
+                                molars) that have become impacted, partially
+                                erupted, or are causing problems such as pain,
+                                infection, crowding, or damage to adjacent
+                                teeth.
+                            </p>
+                            <div class="service-subsection">
+                                <h4>
+                                    <i class="fa-tags"></i> Types of Extraction
+                                </h4>
+                                <ul class="service-types">
+                                    <li>
+                                        Simple extraction &ndash; For fully
+                                        erupted wisdom teeth that are easily
+                                        accessible.
+                                    </li>
+                                    <li>
+                                        Surgical extraction &ndash; For impacted
+                                        wisdom teeth that are trapped beneath
+                                        the gum line or bone.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4><i class="fa-list-ol"></i> Process</h4>
+                                <ul class="service-steps">
+                                    <li>
+                                        X-ray assessment to evaluate the
+                                        position and condition of the wisdom
+                                        teeth.
+                                    </li>
+                                    <li>
+                                        Local anesthesia or sedation to ensure a
+                                        comfortable procedure.
+                                    </li>
+                                    <li>
+                                        Extraction procedure performed by our
+                                        experienced dental surgeon.
+                                    </li>
+                                    <li>
+                                        Post-operative care instructions
+                                        provided for optimal healing.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4><i class="fa-clock-o"></i> Recovery</h4>
+                                <ul>
+                                    <li>
+                                        Recovery usually takes
+                                        <strong>3-7 days</strong>. We provide
+                                        comprehensive aftercare instructions to
+                                        ensure a smooth healing process.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                  <li><strong> health through better diet</strong></li>
-                  Compromises in chewing efficiency will affect the choice of food in our daily diet. When chewing efficiency is affected, patients tend to favour soft food, which is high in sugar and fat content and avoid fibrous or tougher food, higher in protein and vitamins. Replacing teeth with dental implants will enable patients to have a more balanced diet through improvement in chewing efficiency.
+                        <!-- Crowns &amp; Bridges -->
+                        <div class="service-detail-card" id="service-crowns">
+                            <h2>
+                                <i class="fa-diamond"></i> Crowns &amp; Bridges
+                            </h2>
+                            <p class="service-desc">
+                                Crowns and bridges are restorative dental
+                                solutions designed to repair damaged teeth or
+                                replace missing teeth. A crown (cap) covers and
+                                protects a damaged tooth, while a bridge spans
+                                the gap created by one or more missing teeth,
+                                anchored to adjacent teeth or implants.
+                            </p>
+                            <div class="service-subsection">
+                                <h4><i class="fa-tags"></i> Types</h4>
+                                <ul class="service-types">
+                                    <li>
+                                        Porcelain / ceramic crowns &ndash;
+                                        Natural-looking, metal-free restorations
+                                        ideal for front teeth.
+                                    </li>
+                                    <li>
+                                        Metal-ceramic crowns &ndash; Strong,
+                                        durable crowns with a porcelain exterior
+                                        and metal substructure.
+                                    </li>
+                                    <li>
+                                        Dental bridges &ndash; Fixed prosthetic
+                                        devices that replace missing teeth by
+                                        bridging the gap.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4><i class="fa-list-ol"></i> Process</h4>
+                                <ul class="service-steps">
+                                    <li>
+                                        Tooth preparation &ndash; reshaping the
+                                        tooth to accommodate the crown.
+                                    </li>
+                                    <li>
+                                        Impression taking for precise
+                                        fabrication of your restoration.
+                                    </li>
+                                    <li>
+                                        Temporary crown placement to protect the
+                                        prepared tooth.
+                                    </li>
+                                    <li>
+                                        Permanent crown fitting and cementation
+                                        after laboratory fabrication.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                  <li><strong>Improve self-esteem and confidence</strong></li>
-                  Missing teeth or loose dentures can negatively impact our patients’ self-esteem and confidence. Patient with such problems tend to avoid smiling, speaking or engaging in social activities. However, with adequate replacement of teeth, patients can then confidently speak and smile without the fear of denture dropping midway through a conversation.
+                        <!-- Pediatric Dentistry -->
+                        <div class="service-detail-card" id="service-pediatric">
+                            <h2>
+                                <i class="fa-child"></i> Pediatric Dentistry
+                            </h2>
+                            <p class="service-desc">
+                                Children's dental care from infancy through
+                                adolescence, focusing on preventive care, early
+                                detection of dental issues, and building
+                                positive dental habits for a lifetime of healthy
+                                smiles. Our team creates a welcoming,
+                                child-friendly environment to make every visit
+                                enjoyable.
+                            </p>
+                            <div class="service-subsection">
+                                <h4>
+                                    <i class="fa-tags"></i> Services for
+                                    Children
+                                </h4>
+                                <ul class="service-types">
+                                    <li>
+                                        Regular check-ups &ndash;
+                                        Age-appropriate examinations to monitor
+                                        dental development.
+                                    </li>
+                                    <li>
+                                        Fluoride treatment &ndash; Strengthens
+                                        enamel and prevents cavities.
+                                    </li>
+                                    <li>
+                                        Dental sealants &ndash; Protective
+                                        coatings applied to the chewing surfaces
+                                        of molars.
+                                    </li>
+                                    <li>
+                                        Fillings &ndash; Tooth-coloured
+                                        restorations for treating cavities in
+                                        baby and adult teeth.
+                                    </li>
+                                    <li>
+                                        Habit counselling &ndash; Guidance on
+                                        thumb sucking, pacifier use, and other
+                                        oral habits.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4><i class="fa-clock-o"></i> First Visit</h4>
+                                <ul>
+                                    <li>
+                                        Recommended by <strong>age 1</strong> or
+                                        within 6 months of the first tooth
+                                        erupting, to establish a dental home and
+                                        start preventive care early.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                </ul>
+                        <!-- Periodontal Treatment -->
+                        <div
+                            class="service-detail-card"
+                            id="service-periodontal"
+                        >
+                            <h2>
+                                <i class="fa-heartbeat"></i> Periodontal
+                                Treatment
+                            </h2>
+                            <p class="service-desc">
+                                Periodontal treatment addresses gum diseases
+                                ranging from mild gingivitis (gum inflammation)
+                                to advanced periodontitis (gum disease with bone
+                                loss). Early intervention is key to preventing
+                                tooth loss and maintaining overall oral health.
+                            </p>
+                            <div class="service-subsection">
+                                <h4><i class="fa-tags"></i> Services</h4>
+                                <ul class="service-types">
+                                    <li>
+                                        Scaling &amp; root planing &ndash; Deep
+                                        cleaning of tooth roots to remove plaque
+                                        and tartar below the gumline.
+                                    </li>
+                                    <li>
+                                        Periodontal maintenance &ndash; Ongoing
+                                        care to manage gum health after initial
+                                        treatment.
+                                    </li>
+                                    <li>
+                                        Gum graft surgery &ndash; Repairing
+                                        receding gums to protect tooth roots and
+                                        improve aesthetics.
+                                    </li>
+                                    <li>
+                                        Pocket reduction surgery &ndash;
+                                        Reducing deep gum pockets to facilitate
+                                        better cleaning and healing.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4><i class="fa-shield"></i> Prevention</h4>
+                                <ul class="service-benefits">
+                                    <li>
+                                        Brush your teeth twice daily with
+                                        fluoride toothpaste.
+                                    </li>
+                                    <li>
+                                        Floss daily to remove plaque between
+                                        teeth and along the gumline.
+                                    </li>
+                                    <li>
+                                        Visit your dentist regularly for
+                                        professional cleanings and check-ups.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                <p><strong>Treatment Procedures</strong></p>
-                <ol>
-                  <li><strong>First Consultation</strong></li>
-                  Relevant x-rays will be taken and comprehensive examination will be performed by our dentists. Our dentist will then discuss your pre-existing dental condition and treatment required to save your natural teeth. Discussion of treatment plan for implants includes information on the duration of treatment, phases of treatment, implant brands and materials used, cost and as well as the maintenance protocol.
-
-                  <li><strong>Placement of Implants</strong></li>
-                  Dentists will gently insert a titanium implant under local anaesthesia. Once the implant is placed, the implant site is allowed to heal for 2 months. During this time, the jawbone is allowed to heal around the implant. Temporary restoration may be placed during this phase for aesthetic and functional reasons.
-
-
-                  <li><strong>Placement of new teeth</strong></li>
-                  After osseointegration of the titanium implants to bone, dentists will take a mould of your implants. Each crown is custom-made by our technician. The crown is made to match to the neighbouring teeth as much as possible in order to achieve a good esthetic outcome
-
-
-                  <li><strong>Care for your implants</strong></li>
-                  Implants are like our natural teeth and need to be cleaned daily. They also need to be checked regularly and be cleaned by dentists. Professional cleaning of implants is done with special instruments; otherwise the implant surface will be damaged.
-
-                  <li><strong>Surgery duration</strong></li>
-                  In most cases, implant surgeries can be completed in 30 minutes. However, adequate time should be given for the patient to have all his/her questions answered. Also, time should also be allowed for the patient to be prepared for the surgery in an unhurried fashion.
-
-                  <li><strong>Is the surgery painful?</strong></li>
-                  Most implant surgeries are pain-free. In fact, almost 90% of our patients do not need painkillers beyond the second day. However, we would recommend that the patient takes the prescribed painkillers on the first day.
-
-                </ol>
-
-                <p><strong>Benefits of Dentures</strong></p>
-                <p>The cost of implant treatment is dependent on the following factors.</p>
-                <ul>
-                  <li>Experience and skill level of the dentist</li>
-
-                  <li>The brand and reliability of implant used</li>
-
-                  <li>The type of material used to fabricate the teet</li>
-
-                  <li>Whether additional adjunct procedures are required</li>
-                </ul>
-
-                <p>We encourage you to speak with our professionals to find out more about the dental implant treatments available for your condition, dental implant costs, price ranges and other fees applicable.</p>
-
-
+                        <!-- Oral Surgery -->
+                        <div
+                            class="service-detail-card"
+                            id="service-oral-surgery"
+                        >
+                            <h2><i class="fa-hospital-o"></i> Oral Surgery</h2>
+                            <p class="service-desc">
+                                Oral surgery encompasses a range of surgical
+                                procedures performed in and around the mouth,
+                                jaw, and facial areas to treat various
+                                conditions. All procedures are performed with
+                                your comfort and safety as the highest priority.
+                            </p>
+                            <div class="service-subsection">
+                                <h4><i class="fa-tags"></i> Procedures</h4>
+                                <ul class="service-types">
+                                    <li>
+                                        Wisdom tooth extraction &ndash; Removal
+                                        of impacted or problematic wisdom teeth.
+                                    </li>
+                                    <li>
+                                        Dental implant placement &ndash;
+                                        Surgical placement of titanium implant
+                                        posts.
+                                    </li>
+                                    <li>
+                                        Jaw surgery &ndash; Corrective
+                                        procedures for misaligned jaws or TMJ
+                                        disorders.
+                                    </li>
+                                    <li>
+                                        Biopsy &ndash; Removal and examination
+                                        of abnormal oral tissues.
+                                    </li>
+                                    <li>
+                                        Treatment of facial trauma &ndash;
+                                        Management of injuries to the mouth,
+                                        teeth, and facial structures.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="service-subsection">
+                                <h4>
+                                    <i class="fa-info-circle"></i> Anaesthesia &
+                                    Sedation
+                                </h4>
+                                <ul>
+                                    <li>
+                                        All oral surgery procedures are
+                                        performed under
+                                        <strong>local anesthesia</strong> with
+                                        <strong
+                                            >sedation options available</strong
+                                        >
+                                        for patients who experience anxiety or
+                                        require more complex procedures.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div role="tabpanel" class="tab-pane" id="Invisalign">
-              <h1 class="department-title"></i>Invisalign</h1>
-              <p><strong>What is invisible Invisalign?</strong></p>
-              <p>Invisible Braces / Invisalign are transparent and removable orthodontic appliances for straightening teeth. It uses a series of nearly invisible and removable aligners that are custom-made specifically for your set of teeth.
-                 The braces are barely visible when worn over the teeth due to the transparency and clarity of the material used. The aligners will gradually straighten your teeth until you achieve your desired result at the end of your treatment.
-                 To ensure that your treatment is optimal, it is advisable to wear the invisible braces / Invisalign at least 17 hours a day.</p>
+        </section>
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <!-- Brand Column -->
+                    <div class="col-md-4">
+                        <div class="footer-widget">
+                            <img
+                                src="images/logo_white.png"
+                                width="180"
+                                height="48"
+                                alt="Phi Dental"
+                                style="margin-bottom: var(--sp-4); opacity: 0.9"
+                            />
+                            <p>
+                                Trusted dental care in Kota Kinabalu, Sabah
+                                since 2018. Three convenient locations. Open
+                                every day.
+                            </p>
+                            <div class="footer-social-box">
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://www.facebook.com/phident/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Facebook"
+                                            ><i
+                                                class="fa fa-facebook"
+                                                aria-hidden="true"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://instagram.com/phidental"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Instagram"
+                                            ><i
+                                                class="fa fa-instagram"
+                                                aria-hidden="true"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://wa.me/60134103103"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="WhatsApp"
+                                            ><i
+                                                class="fa fa-whatsapp"
+                                                aria-hidden="true"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="mailto:phidental13@gmail.com"
+                                            aria-label="Email"
+                                            ><i
+                                                class="fa fa-envelope"
+                                                aria-hidden="true"
+                                            ></i
+                                        ></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
-                 <p><strong>Benefits of Invisible Invisalign</strong></p>
-                 <ul>
-                   <li>Healthier Teeth and Gums</li>
-                   <li>Cleaner Teeth</li>
-                   <li>Improves Oral Hygiene And Bite Problems</li>
-                    <li>Virtually Invisible</li>
-                   <li>Comfortable And Removable For Eating Or Cleaning</li>
-                 </ul>
+                    <!-- Quick Links Column -->
+                    <div class="col-md-4">
+                        <div class="footer-widget">
+                            <h2>Quick Links</h2>
+                            <ul class="footer-ul">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="contact-us.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                 <p><strong>Treatment Procedures</strong></p>
-                <ol>
-                  <li><strong>The Initial Consultation</strong></li>
-                  It is important to meet up with your dentist for a consultation to find out if you are suitable for the treatment and to find out more. This is when you can ask questions like: Am I suitable? How much will my treatment cost? How long will it take?
-
-                  <li><strong>Taking Records For Your Case</strong></li>
-                  Before your dentist can plan your Invisible Braces / Invisalign treatment, they will need to take photographs, dental impressions and X-rays. These will be used to analyse your dental condition.
-
-                  <li><strong>Treatment Plan</strong></li>
-                  A personalised treatment plan will be created and the dentist will explain to you how long your treatment will take to achieve the desired result.
-
-                  <li><strong>Begin Your Invisible Invisalign Journey</strong></li>
-                </ol>
-                
-                <p><strong>Cost of Invisalign</strong></p>
-                As with all orthodontic treatment, the cost of Invisalign is dependent on the specifics of your individual case: such as the complexity of your straightening issue and the required length of treatment. Contact us for a consultation on Invisalign.
+                    <!-- Contact & Hours Column -->
+                    <div class="col-md-4">
+                        <div class="footer-widget">
+                            <h2>Working Hours</h2>
+                            <span
+                                ><i
+                                    class="fa fa-calendar"
+                                    aria-hidden="true"
+                                ></i>
+                                Monday – Sunday</span
+                            >
+                            <span
+                                ><i
+                                    class="fa fa-clock-o"
+                                    aria-hidden="true"
+                                ></i>
+                                10:00 AM – 10:00 PM</span
+                            >
+                            <span
+                                ><i class="fa fa-star" aria-hidden="true"></i>
+                                Open on Public Holidays</span
+                            >
+                            <div style="margin-top: var(--sp-6)">
+                                <h2>Contact</h2>
+                                <span
+                                    ><i
+                                        class="fa fa-phone"
+                                        aria-hidden="true"
+                                    ></i>
+                                    <a
+                                        href="tel:+60134103103"
+                                        style="color: inherit"
+                                        >+6 013-4103103</a
+                                    ></span
+                                >
+                                <span
+                                    ><i
+                                        class="fa fa-envelope"
+                                        aria-hidden="true"
+                                    ></i>
+                                    <a
+                                        href="mailto:phidental13@gmail.com"
+                                        style="color: inherit"
+                                        >phidental13@gmail.com</a
+                                    ></span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-            <div role="tabpanel" class="tab-pane" id="rct">
-              <h1 class="department-title"></i>Root Canal Treatment</h1>
-              <p>Root canal treatment is a procedure, which eliminates infection that has reached the nerves of the affected tooth. Signs of infection requiring root canal treatment include pain, prolonged sensitivity to hot or cold, tenderness to chewing, swelling of the gum and the discolouration of the tooth.
-                During root canal treatment, the infected nerves are removed and the inside of the tooth is disinfected and cleaned. It is then filled and sealed with a rubber-like material called gutta-percha. The tooth is then restored with a crown or permanent filling for protection. After the final restorations, the tooth continues to function like any other tooth.</p>
-              
-              <p><strong>Benefits of Root Canal Treatment</strong></p>
-              Root canal treatment eliminates pain from a badly infected tooth which otherwise has to be extracted. Saving the natural tooth will help maintain chewing efficiency and protect the other teeth from excessive wear or stress. It also helps maintain your natural smile.
-            
-              <p><strong>Treatment Procedures</strong></p>
-                <ol>
-                  <li>A thorough examination is done and an x-ray of the tooth is taken.</li>
-                  <li>Local anaesthetic is administered. A 'dental dam' is placed over the tooth to keep it clean and free of saliva during the procedure.</li>
-                  <li>An opening is made in the crown of the tooth and small instruments are used to clean out the infected pulp tissue and shape the root canal space for filling.</li>
-                  <li>The prepared root canal is filled with a biocompatible material and sealed to prevent bacteria from re-entering the canal.</li>
-                </ol>
-
-                <p><strong>Cost of Root Canal Treatment</strong></p>
-                The cost varies depending on the tooth that is being treated and complexity of the problem. Molars have multiple root canals which are more difficult to treat. As such, the cost is usually higher.
-                We encourage that you to speak with our dentist during your consultation to find out more about the dental treatment available for your condition, price ranges and other fees applicable.
-              </div>
-
-
-            <div role="tabpanel" class="tab-pane" id="sap">
-              <h1 class="department-title"></i>Scaling And Polishing</h1>
-              <p>Dental scaling and polishing should be done regularly because bacteria in the oral cavity constantly forms around your teeth and gums in a film known as plaque. This layer of plaque eventually absorbs minerals in the saliva to form hardened deposits known commonly as calculus or tartar. When left untreated, the bacteria will eventually cause a host of common dental problems such as dental cavities in your teeth and gum problems.</p>
-
-              <p><strong>Benefits of Scaling and Polishing</strong></p>
-              Scaling and polishing removes the bacterial deposits that constantly form around your teeth and gums. Regular oral hygiene maintenance is essential in preventing common dental problems such as dental cavities and gum problems. It also ensures cleaner and brighter looking teeth.
-
-              <p><strong>Treatment Procedures</strong></p>
-              <ol>
-                <li>Examination and assessment of dental condition.</li>
-                <li>Scaling with gentle ultrasonic to remove calculus. This is done with dental loupes which magnify the vision, enabling the scaling process to be done in a precise and gentle manner.</li>
-                <li>Flossing and polishing to remove plaque.</li>
-              </ol>
-
-              <p><strong>Cost of Scaling and Polishing</strong></p>
-              We encourage you to speak with our dentist for a consultation to find out more about the dental treatments available for your condition, price ranges and other fees applicable.
+            <div class="tiny-footer-section">
+                <div class="container">
+                    <div class="tiny-footer-copyright">
+                        &copy; 2025 Phi Dental. All rights reserved. |
+                        <a href="https://phidental.my/">phidental.my</a>
+                    </div>
+                </div>
             </div>
-
-
-            <div role="tabpanel" class="tab-pane" id="teethwhitening">
-              <h1 class="department-title"></i>Teeth Whitening</h1>
-              <p>Teeth whitening is the least invasive of all dental cosmetic treatments. It is safe, fast and inexpensive; an effective way to brighten natural teeth discoloured or stained by age or chemical. Most patients can expect to brighten their teeth by 8 to 10 shades after the whitening procedure.
-                While safe, some individuals do experience some degree of transient tooth sensitivity; this can however be managed by your dentist.</p>
-
-              <p><strong>Benefits of Teeth Whitening</strong></p>  
-              Do you have stained teeth from too much coffee/tea or smoking? Or you may be born with naturally discoloured teeth (intrinsic stains)? Teeth whitening is frequently used to treat mild to moderate surface and intrinsic stains.
-              After 2-3 weeks of ‘home’ whitening or 1 hour of ‘In-office’ whitening, you will be able to achieve your sparkling dream smile. However, longer whitening periods will be required for more severe discolourations (like Tetracycline stains).
-
-              <p><strong>Maintenance</strong></p>
-              This is important to ensure many years of enjoyment of your new smile.
-              As part of PHI Dental’s whitening protocol, we recommend that all our patients maintain the brightness of their teeth regularly with their customized home-whitening trays. These customised home-whitening trays are crafted in our in-house dental laboratory to ensure excellent fit, greater comfort and satisfaction among our patients. While safe, some individuals do experience some degree of transient tooth sensitivity; this can however be managed by your dentist.
-            
-              <p><strong>Treatment Procedures</strong></p>
-              <ul>
-                <li><strong>Home-Whitening</strong></li>
-                This is an easy 15 minute procedure. A detailed aesthetic analysis of your smile is conducted as well as assessment of your dietary habits and expectation. Counselling may be done concerning the right thing to eat after whitening.
-                    <br>
-                    <br>
-                    <ol>
-                      <li>Moulds are taken of both your upper and lower jaws. This allows our in-house technicians to customize (bespoke) the whitening trays to fit you perfectl</li>
-                      <li>The bespoke process takes a few hours to complete. Should you prefer, you may even request to collect them on the same day so that you can start on the whitening straight away! Just ask us!</li>
-                      <li>When the trays are ready, you will be given special whitening gels (available in various concentrations) for the whitening. You will then be shown how to apply the gels and do the whitening.</li>
-                      <li>Apply and wear the trays for between 30 minutes to 2 hours (depending on whitening gel concentrations.
-                        To return to our dentists for review of results in 3 to 4 weeks.</li>
-                      <li>Do remember to do your maintenance!</li>
-                    </ol><br>
-                <p><strong>Tip:</strong>If you have a big party or an important event that you are attending and would want to be in your best smile, a week before the event, you can put the trays on for 1 or 2 applications.</p>
-                
-                <li><strong>In-Office Whitening</strong></li>
-                The in-office whitening procedure lasts about 1 hour, but do set aside 1.5hours for discussion and preparation. 
-                    <br>
-                    <br>
-                    <ol>
-                      <li>A detailed aesthetic analysis of your smile is conducted. This will include an assessment of your dietary habits and expectations. Counselling may be done concerning the kind of food and beverage you can or may not consume after whitening for best results.</li>
-                      <li>Moulds are taken of both your upper and lower jaws. This allows our in-house technicians to bespoke the whitening trays to fit you perfectly.</li>
-                      <li>After cleaning your teeth, your dentist will help you put the gum guard on to protect your lips and gums against the highly concentrated whitening gel.</li>
-                      <li>The ‘light-sensitive’ whitening gel is then placed on to the surface of the teeth, then, specially filtered L.E.D. light is shone on the teeth to speed up the whitening process.</li>
-                      <li>After 3 to 4 ‘cycles’ the whitening process completes and you now have your new smile! Your dentist will advise you on the collection of your maintenance trays.</li>
-                    </ol>
-              </ul>
-
-              <p><strong>Cost of Teeth Whitening</strong></p>
-              We encourage you to speak with our dentist for a consultation to find out more about the dental treatment available for your condition, price ranges and other fees applicable.
-
-            </div>
-
-
-            <div role="tabpanel" class="tab-pane" id="veneers">
-              <h1 class="department-title"></i>Veneers</h1>
-              <p>Porcelain dental veneers are thin, porcelain shells bonded to the front of your teeth. They are primarily used to improve the shape, lighten colour, close spaces and in some cases, to align the teeth.
-                Veneers is also the treatment of choice in discolourations that are too dark to respond well to teeth whitening. These long lasting, ultra-thin porcelain shells can change the colour and the shape of the natural teeth and are an effective way to transform your smile.</p>
-              
-              <p><strong>Benefits of Dental Veneers</strong></p>
-              Desire a more youthful smile? Porcelain dental veneers can provide excellent aesthetic results to improve your smile: 
-                <ul>
-                  <li>Significantly change the colour of your teeth (if teeth whitening cannot lighten them, or root canal treated teeth that are discoloured)</li>
-                  <li>Improve the shape and even align misaligned teeth.</li>
-                  <li>Close ugly spaces in the front teeth.</li>
-                  <li>Veneers are more resistant to staining from coffee/tea/red wine, than normal fillings, as they are made of high-tech materials.</li>
-                </ul>
-
-              <p>Our laboratory will customise all the veneers to achieve the most aesthetic and pleasing results. Bid goodbye to your worn-out, discoloured and tired smile. Rejuvenating you and your self-esteem!</p>
-              <br>
-              <ol>
-                <li><strong>Consultation appointment (Approximately 30 mins)</strong></li>
-                Detailed examination and analysis of your smile and needs.
-
-                <li><strong>First appointment (Approximately 1 hour)</strong></li>
-                Prepare the teeth and take impressions for the veneer. Our dentists will work with our laboratory to fabricate the dental veneers for you.
-                
-                <li><strong>Second appointment (Approximately 1 hour) </strong></li>
-                Seating of completed veneers and permanently bonding them to the teeth.
-
-                <li><strong>Review of completed veneers.</strong></li>
-                Do note that in some cases when patients have parafunctional habits like night-grinding (Bruxism) or clenching, night-guards may be prescribed for the protection of these veneers. For more advanced Smile Makeovers, we conduct a comprehensive and detailed analysis of the patient’s smile (Aesthetic Smile Analysis). It is only then that will we be able to design the ideal smile for our patients using dental veneers.
-              </ol>
-
-              <p><strong>Cost of Veneers</strong></p>
-              We encourage you to speak with our dentist for a consultation to find out more about the dental treatment available for your condition, price ranges and other fees applicable
-            
-            
-            </div>
-
-
-            <div role="tabpanel" class="tab-pane" id="wts">
-              <h1 class="department-title"></i>Wisdom Tooth Surgery</h1>
-              <p><strong>Wisdom Tooth</strong></p>
-              A wisdom tooth is also known as the third molar. In general, wisdom teeth will grow out of the gums between the ages of 18 to 21. If the wisdom tooth erupts straight out, they do not need to be removed. However, these wisdom teeth does not always grow out as desired. When they do not erupt properly, wisdom teeth can cause pain and infection. This is when the removal of these wisdom teeth becomes necessary. The procedure can be performed by specialists to ensure that the removal is safe and painless.
-              <br><br>
-
-              <p><strong>Wisdom Tooth Surgery</strong></p>
-              A wisdom tooth surgery is a procedure whereby the dentist performs a minor but delicate surgical procedure to safely remove a wisdom tooth that has not erupted as desired.
-              Wisdom tooth surgeries are usually done under local anaesthesia. Research has shown that wisdom tooth surgery is a very safe and straight-forward procedure. With proper examination and x-rays analysis, dentists will be able to predictably and safely perform wisdom tooth surgical procedures. The x-rays helps the dentist to plan for a successful surgery and to note on details like the positioning of your wisdom tooth and how close the root is growing to the nerve that runs in the lower jaw. This is important as the compression of the nerve will cause the patient to experience some numbness to the lower lip.
-              There are some common discomfort that the patient will experience in the initial days after the surgery. Mild pain, bleeding and swelling lasting one of two days will be experienced, however, painkillers and other medication will be prescribed to aid with pain management and healing.
-              <br><br>
-
-              <p><strong>Benefits of Wisdom Tooth Removal</strong></p>
-                <ol>
-                  <li><strong>Saving of teeth</strong></li>
-                  When wisdom teeth do not grow out straight, food trap will occur between the wisdom tooth and its adjacent tooth. The food trapped results in decay and gum disease which affect the wisdom teeth and its neighbouring teeth.
-                  Early removal of the wisdom tooth can prevent the loss of your initial molars.
-
-                  <li><strong>Prevention of pain and swelling</strong></li>
-                  Food trap between the wisdom tooth and its adjacent tooth can lead to infection. With infection, patients often experience severe pain and swelling. More serious problems such as the formulation of cysts or tumours around an impacted tooth can occur. This leads to the destruction of the surrounding jawbone, tissues and neighbouring teeth, leading to prolonged, costly treatments. If such serious conditions are not addressed, the infection could eventually become so severe that it becomes life threatening.
-
-                  <li><strong>Elimination of bad breath</strong></li>
-                  Patients often complain of bad breath due to the build-up of food and bacteria between wisdom tooth and its adjacent tooth or under the gums covering the wisdom tooth. Sometimes, people surrounding the patient can detect the rancid smell that emits from the patent’s mouth. When this occurs, the removal of the wisdom tooth causing the odour should do the job. 
-
-                  <li><strong>Prevention of cyst formation</strong></li>
-                  Wisdom teeth that failed to grow out can lead to formation of cyst. In rare but serious development, these cysts can become cancerous. Hence, removal of wisdom tooth is indicated for these reasons. 
-                </ol>
-
-                <p><strong>Treatment Procedures</strong></p>
-                  <ul>
-                    <li><strong>Is wisdom tooth surgery painful? </strong></li>
-                    Wisdom tooth surgery is pain-free. Local anaesthesia is given prior to the surgical procedure.
-
-                    <li><strong>How long is wisdom tooth surgery? </strong></li>
-                    <br>
-                      <ol>
-                        <li>Most wisdom tooth sururgery can be completed in 45minutes to one hour.</li>
-                        <li>Most of the time is used to prepare the patient; such as ensuring that the patient has pain-free injections and is relaxed before the surgery.</li>
-                        <li>Depending on your oral condition and the number of wisdom teeth you will be extracting, your dentist will be able to advise you on the duration only after a thorough initial examination.</li>
-                      </ol><br>
-
-                    <li><strong>How long is the recovery period after wisdom tooth surgery? </strong></li>
-                        <ol>
-                          <li>In general, patients will be able to eat normally after 1-2 days.</li>
-                          <li>Patients might experience mild pain for the first day but it can be easily and effectively controlled with painkillers.</li>
-                          <li>Bleeding usually stops after one day.</li>
-                          <li>Most patients are able to resume normal activities after one or two days.</li>
-                        </ol>
-                  </ul>
-
-                  <p><strong>Cost of Wisdom Tooth Surgery</strong></p>
-                  The cost of wisdom tooth removal will depend on the procedure a patient undergoes. This is why an initial consultation and x-rays are required to determine if you will require an extraction or a surgery. Your dentist will be the best person to advise you on the dental treatments available for your condition, price range and other fees applicable.
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /Department -->
-
-<!-- Footer-section -->
-<div class="footer-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="footer-contact-box">
-          <h2>Contact Us</h2>
-            <h3 style="color: #FFFFFF ;">Suria</h3>
-            <div class="contact-icon">
-              <i class="icon-location-pin icons"></i>
-              <p>Lot2-33, Second floor, Suria Sabah Shopping Mall, 88000 Kota Kinabalu, Sabah, Malaysia.</p>
-            </div>
-            <div class="contact-icon">
-              <i class="icon-call-out icons"></i>
-              <p>+6 013-4103103</p>
-            </div>
-            <h3 style="color: #FFFFFF ;">Plaza333</h3>
-            <div class="contact-icon">
-              <i class="icon-location-pin icons"></i>
-              <p>Lot 79, Ground Floor, Block I, Lorong Plaza333-3A, Plaza333, 88950 Penampang, Sabah</p>
-            </div>
-            <div class="contact-icon">
-              <i class="icon-call-out icons"></i>
-              <p>+6 014-3000139</p>
-            </div>
-            <hr>
-            <div class="contact-icon">
-              <i class="icon-envelope icons"></i>
-              <p>phidental13@gmail.com</p>
-            </div>
-          <div class="footer-social-box">
-            <ul>
-              <li><a href="https://www.facebook.com/phident/"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://instagram.com/phidental"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="mailto://phidental13@gmail.com"><i class="fa fa-envelope"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-offset-1 col-md-3">
-        <div class="footer-widget">
-          <h2>Navigation</h2>
-          <ul class="listnone bullet-arrow-right footer-ul footer-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="#" onclick="myFunction()">Gallery</a></li>
-              <li><a href="faq.html">FAQS</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="footer-widget">
-          <h2>Working Hours</h2>
-          <span> Monday to Sunday : 10:00 - 22:00 </span></br>
-          <span> Open on Public Holiday </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /Footer-section -->
-
-<!-- Tiny-footer Section -->
-<div class="tiny-footer-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-offset-4 col-md-6">
-        <div class="tiny-footer-copyright"> &copy; 2019. Phidental.my </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /Tiny Footer-section -->
-
-  <!-- jquery -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="js/menumaker.js"></script>
-  <script type="text/javascript" src="js/theme.js"></script>
-  <script>
-    function myFunction() {
-      window.open("https://instagram.com/phidental", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=250,width=1300height=1000");}</script>
-  <!-- end  jquery -->
-  </body>
-  </html>
-  
+        </footer>
+        <a
+            href="https://wa.me/60134103103"
+            class="whatsapp-float"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            ><i class="fa fa-whatsapp"></i
+            ><span class="whatsapp-text">Chat with us</span></a
+        >
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            (function ($) {
+                "use strict";
+                $(window).on("load", function () {
+                    $("#preloader").addClass("hidden");
+                    setTimeout(function () {
+                        $("#preloader").css("display", "none");
+                    }, 500);
+                });
+                var h = $("#hamburger"),
+                    n = $("#navmenu"),
+                    o = $("#mobileOverlay");
+                h.on("click", function () {
+                    h.toggleClass("active");
+                    n.toggleClass("active");
+                    o.toggleClass("active");
+                    h.attr(
+                        "aria-expanded",
+                        h.attr("aria-expanded") === "true" ? "false" : "true",
+                    );
+                });
+                o.on("click", function () {
+                    h.removeClass("active").attr("aria-expanded", "false");
+                    n.removeClass("active");
+                    o.removeClass("active");
+                });
+                n.find("a").on("click", function () {
+                    if (n.hasClass("active")) {
+                        h.removeClass("active").attr("aria-expanded", "false");
+                        n.removeClass("active");
+                        o.removeClass("active");
+                    }
+                });
+                $(window).on("scroll", function () {
+                    $("#header").toggleClass(
+                        "scrolled",
+                        $(this).scrollTop() > 50,
+                    );
+                });
+                $(".department-nav a").on("click", function (e) {
+                    var target = $(this.getAttribute("href"));
+                    if (target.length) {
+                        e.preventDefault();
+                        $("html, body").animate(
+                            {
+                                scrollTop:
+                                    target.offset().top -
+                                    $("#header").outerHeight() -
+                                    15,
+                            },
+                            600,
+                            "swing",
+                        );
+                    }
+                });
+                function updateActiveService() {
+                    var scrollPos = $(window).scrollTop();
+                    var headerH = $("#header").outerHeight() + 20;
+                    var navLinks = $(".department-nav li a");
+                    var currentId = "";
+                    $(".service-detail-card").each(function () {
+                        var top = $(this).offset().top - headerH;
+                        var bottom = top + $(this).outerHeight();
+                        if (scrollPos >= top && scrollPos < bottom) {
+                            currentId = $(this).attr("id");
+                        }
+                    });
+                    navLinks
+                        .removeClass("active")
+                        .parent()
+                        .removeClass("active");
+                    if (currentId) {
+                        var activeLink = $(
+                            '.department-nav li a[href="#' + currentId + '"]',
+                        );
+                        activeLink
+                            .addClass("active")
+                            .parent()
+                            .addClass("active");
+                    }
+                }
+                $(window).on("scroll", updateActiveService);
+                $(window).on("load", function () {
+                    setTimeout(updateActiveService, 100);
+                });
+                function cr() {
+                    var w = $(window).scrollTop() + $(window).height();
+                    $(".reveal").each(function () {
+                        if ($(this).offset().top < w - 60)
+                            $(this).addClass("visible");
+                    });
+                }
+                $(".service-detail-card, .department-nav").addClass("reveal");
+                $(window).on("scroll", cr);
+                $(window).on("load", function () {
+                    setTimeout(cr, 200);
+                });
+                cr();
+            })(jQuery);
+        </script>
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: "1678638095724206",
+                    autoLogAppEvents: true,
+                    xfbml: true,
+                    version: "v18.0",
+                });
+            };
+            (function (d, s, id) {
+                var js,
+                    fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src =
+                    "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            })(document, "script", "facebook-jssdk");
+        </script>
+        <div
+            class="fb-customerchat"
+            page_id="425753967902581"
+            attribution="biz_inbox"
+            theme_color="#C2185B"
+            logged_in_greeting="Hi! Welcome to Phi Dental."
+            logged_out_greeting="Hi! Welcome to Phi Dental."
+        ></div>
+    </body>
+</html>

@@ -1,323 +1,785 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- head -->
 <head>
-<title>Phi Dental</title>
-<meta charset="utf-8" />
-<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<meta name="description" content="phidental" />
-<meta name="keywords" content="dental, dental suria, phi dental suria, suria sabah, dental, dentist in kota kinabalu, braces in kota kinabalu">
-<meta name="author" content="phi" />
-<meta name="MobileOptimized" content="320" />
-<!-- favicon-icon -->
-<link rel="icon" type="image/icon" href="images/favicon/favicon.png">
-<!-- Bootstrap -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<!-- Menu marker CSS -->
-<link href="css/fontello.css" rel="stylesheet">
-<!-- Template fonts -->
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800" rel="stylesheet">
-<!-- Font Awesome CSS -->
-<link href="css/font-awesome.min.css" rel="stylesheet">
-<!-- Font simple-line-icons CSS -->
-<link href="css/simple-line-icons.css" rel="stylesheet">
-<!-- Font Custom  CSS -->
-<link href="css/menumaker.css" rel="stylesheet">
-<!-- OWL CSS -->
-<link href="css/owl.carousel.css" rel="stylesheet">
-<!-- Template Style CSS -->
-<link href="css/style.css" rel="stylesheet">
-<!-- Stucture CSS -->
-<link href="css/stucture.css" rel="stylesheet">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Phi Dental | Trusted Dental Clinic in Kota Kinabalu, Sabah</title>
+  <meta name="description" content="Phi Dental — comprehensive dental care in Kota Kinabalu, Sabah. Expert braces, implants, Invisalign, root canal & more. Open every day 10am–10pm. Book your appointment today!" />
+  <meta name="keywords" content="dental clinic Kota Kinabalu, dentist Sabah, braces KK, dental implant, Invisalign Kota Kinabalu, root canal treatment, teeth whitening, Phi Dental Suria" />
+  <meta name="author" content="Phi Dental" />
+  <link rel="canonical" href="https://phidental.my/" />
+  <link rel="icon" type="image/png" href="images/favicon/favicon.png" />
 
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://phidental.my/" />
+  <meta property="og:title" content="Phi Dental | Trusted Dental Clinic in Kota Kinabalu, Sabah" />
+  <meta property="og:description" content="Phi Dental provides comprehensive dental care in Kota Kinabalu, Sabah. Braces, implants, Invisalign & more. Open 7 days a week." />
+  <meta property="og:image" content="https://phidental.my/images/phi3.jpg" />
+  <meta property="og:site_name" content="Phi Dental" />
+  <meta property="og:locale" content="en_MY" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Phi Dental | Trusted Dental Clinic in Kota Kinabalu, Sabah" />
+  <meta name="twitter:description" content="Phi Dental provides comprehensive dental care in Kota Kinabalu, Sabah." />
+  <meta name="twitter:image" content="https://phidental.my/images/phi3.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "@id": "https://phidental.my/",
+    "name": "Phi Dental",
+    "url": "https://phidental.my/",
+    "logo": "https://phidental.my/images/logo2.png",
+    "image": "https://phidental.my/images/phi3.jpg",
+    "description": "Phi Dental provides comprehensive dental care in Kota Kinabalu, Sabah. Founded in 2018.",
+    "telephone": "+60134103103",
+    "email": "phidental13@gmail.com",
+    "foundingDate": "2018",
+    "priceRange": "$$",
+    "openingHours": "Mo-Su 10:00-22:00",
+    "sameAs": ["https://www.facebook.com/phident/", "https://instagram.com/phidental"],
+    "location": [
+      {
+        "@type": "Dentist",
+        "name": "Phi Dental — Suria Sabah",
+        "address": {"@type": "PostalAddress", "streetAddress": "Lot 2-33, Second Floor, Suria Sabah Shopping Mall", "addressLocality": "Kota Kinabalu", "addressRegion": "Sabah", "postalCode": "88000", "addressCountry": "MY"},
+        "telephone": "+60134103103"
+      },
+      {
+        "@type": "Dentist",
+        "name": "Phi Dental — Plaza333",
+        "address": {"@type": "PostalAddress", "streetAddress": "Lot 79, Ground Floor, Block I, Lorong Plaza333-3A", "addressLocality": "Penampang", "addressRegion": "Sabah", "postalCode": "88950", "addressCountry": "MY"},
+        "telephone": "+60143000139"
+      },
+      {
+        "@type": "Dentist",
+        "name": "Phi Dental — Taman Fortuna",
+        "address": {"@type": "PostalAddress", "streetAddress": "Lot 8, Ground Floor, Lorong Bunga Seroja 1, Taman Fortuna Ph 2, Jalan Penampang", "addressLocality": "Kota Kinabalu", "addressRegion": "Sabah", "postalCode": "88200", "addressCountry": "MY"},
+        "telephone": "+60199991303"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Dental Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Braces"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dental Implants"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Invisalign"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Root Canal Treatment"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Teeth Whitening"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Scaling and Polishing"}}
+      ]
+    }
+  }
+  </script>
 </head>
-<!-- /end head -->
 <body>
-<!--  Topbar -->
+
+<!-- Preloader -->
+<div id="preloader"><div class="preloader-spinner"></div></div>
+
+<!-- Topbar -->
 <div class="topbar">
   <div class="container">
-    <div class="row">
-      <div class="col-md-5 col-sm-5">
-        <p class="wel-msg">Welcome to Phi Dental</p>
-      </div>
-      <div class="col-md-7 col-sm-7 hidden-xs">
-        <div class="topbar-contact">
-          <span class="topbar-email topbar-info"><a href="mailto://phidental13@gmail.com"><i class="fa fa-envelope"></i>phidental13@gmail.com</a></span>
-          <span class="topbar-info"><a href="https://web.facebook.com/phident/?_rdc=1&_rdr"><i class="fa fa fa-facebook"></i>Facebook</a></span>
-          <span class="topbar-info"><a href="https://instagram.com/phidental"><i class="fa fa fa-instagram"></i>instagram</a></span>
-        </div>
-      </div>
+    <div class="wel-msg">Welcome to Phi Dental</div>
+    <div class="topbar-contact">
+      <span class="topbar-info"><a href="mailto:phidental13@gmail.com" aria-label="Email us"><i class="fa fa-envelope" aria-hidden="true"></i> phidental13@gmail.com</a></span>
+      <span class="topbar-info"><a href="https://www.facebook.com/phident/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></span>
+      <span class="topbar-info"><a href="https://instagram.com/phidental" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></span>
     </div>
   </div>
 </div>
-<!-- /Topbar -->
 
 <!-- Header -->
-<div class="header">
+<header class="header" id="header">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo2.png" width="192" height="52" class="img-responsive" alt="Phi Dental Logo" />
+    </a>
+    <button class="hamburger-menu" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="navmenu" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="https://instagram.com/phidental" target="_blank" rel="noopener noreferrer">Gallery</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+        <li>
+          <a href="tel:+60134103103" class="call-menu">
+            <span><i class="fa fa-phone" aria-hidden="true"></i> +6 013-4103103</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- ===== HERO — Split Layout ===== -->
+<section class="hero-section" aria-label="Welcome to Phi Dental">
+  <div class="hero-content">
+    <span class="hero-label">Kota Kinabalu's Trusted Dental Care</span>
+    <h1 class="hero-title">Your Perfect<br>Smile <em>Starts Here</em></h1>
+    <p class="hero-sub">Expert, compassionate dental care at three convenient locations across Kota Kinabalu. Open every day — including public holidays.</p>
+    <div class="hero-actions">
+      <a href="tel:+60134103103" class="btn btn-primary btn-lg"><i class="fa fa-phone" aria-hidden="true"></i> Book Appointment</a>
+      <a href="services.html" class="btn btn-outline btn-lg">Our Services</a>
+    </div>
+    <div class="hero-trust">
+      <span class="hero-trust-item"><i class="fa fa-check-circle" aria-hidden="true"></i> 3 Branches</span>
+      <span class="hero-trust-item"><i class="fa fa-check-circle" aria-hidden="true"></i> Open Daily 10am – 10pm</span>
+      <span class="hero-trust-item"><i class="fa fa-check-circle" aria-hidden="true"></i> Est. 2018</span>
+    </div>
+  </div>
+  <div class="hero-image-wrap">
+    <img src="images/phi3.jpg" alt="Phi Dental clinic reception — modern, clean, professional" />
+  </div>
+</section>
+
+<!-- ===== STATS BAR ===== -->
+<div class="stats-bar" aria-label="Key statistics">
+  <div class="container">
+    <div class="stat-item">
+      <span class="stat-number">3</span>
+      <span class="stat-label">Branches</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">12+</span>
+      <span class="stat-label">Services</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">365</span>
+      <span class="stat-label">Days Open</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">2018</span>
+      <span class="stat-label">Est.</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" class="section-padding" style="background:#fff;">
+  <div class="container">
+    <div class="section-header text-center">
+      <p class="sec-label">What We Offer</p>
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle" style="margin:0 auto 0;">Comprehensive dental care for your whole family, delivered with precision and care.</p>
+      <hr class="section-divider" />
+    </div>
+    <div class="row">
+
+      <div class="col-md-4 col-sm-6" style="margin-bottom:24px;">
+        <div class="service-card reveal reveal-delay-1" data-num="01">
+          <div class="service-card-icon"><i class="fa fa-smile-o" aria-hidden="true"></i></div>
+          <h3><a href="services.html#braces">Braces</a></h3>
+          <p>Orthodontic appliances designed to straighten and improve the alignment of your teeth for a healthier, beautiful smile.</p>
+          <a href="services.html#braces" class="btn-link">Learn more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" style="margin-bottom:24px;">
+        <div class="service-card reveal reveal-delay-2" data-num="02">
+          <div class="service-card-icon"><i class="fa fa-plus-square-o" aria-hidden="true"></i></div>
+          <h3><a href="services.html#implant">Dental Implant</a></h3>
+          <p>A permanent, natural-looking solution for missing teeth using titanium implants surgically placed into the jawbone.</p>
+          <a href="services.html#implant" class="btn-link">Learn more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" style="margin-bottom:24px;">
+        <div class="service-card reveal reveal-delay-3" data-num="03">
+          <div class="service-card-icon"><i class="fa fa-magic" aria-hidden="true"></i></div>
+          <h3><a href="services.html#invisalign">Invisalign</a></h3>
+          <p>Nearly invisible, removable aligners that straighten your teeth discreetly — no metal wires, more comfortable.</p>
+          <a href="services.html#invisalign" class="btn-link">Learn more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" style="margin-bottom:24px;">
+        <div class="service-card reveal reveal-delay-1" data-num="04">
+          <div class="service-card-icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></div>
+          <h3><a href="services.html#rootcanal">Root Canal Treatment</a></h3>
+          <p>Eliminates painful infection that has reached the tooth nerve, saving your natural tooth and providing lasting relief.</p>
+          <a href="services.html#rootcanal" class="btn-link">Learn more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" style="margin-bottom:24px;">
+        <div class="service-card reveal reveal-delay-2" data-num="05">
+          <div class="service-card-icon"><i class="fa fa-tint" aria-hidden="true"></i></div>
+          <h3><a href="services.html#scaling">Scaling &amp; Polishing</a></h3>
+          <p>Professional cleaning to remove plaque and tartar buildup, keeping your teeth and gums in optimal health.</p>
+          <a href="services.html#scaling" class="btn-link">Learn more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6" style="margin-bottom:24px;">
+        <div class="service-card reveal reveal-delay-3" data-num="06">
+          <div class="service-card-icon"><i class="fa fa-star-o" aria-hidden="true"></i></div>
+          <h3><a href="services.html#whitening">Teeth Whitening</a></h3>
+          <p>Professional-grade whitening treatments for a noticeably brighter smile — faster and safer results than home kits.</p>
+          <a href="services.html#whitening" class="btn-link">Learn more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <div class="text-center" style="margin-top:32px;">
+      <a href="services.html" class="btn btn-primary btn-lg">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="about-section section-padding" style="background:#F4F7FA;">
+  <div class="container">
+    <div class="row" style="align-items:center;">
+      <div class="col-md-6" style="margin-bottom:24px;">
+        <div class="about-image-wrapper reveal">
+          <img src="images/phi1.jpg" alt="Phi Dental treatment room — state-of-the-art equipment" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="about-whitebox reveal">
+          <span class="about-badge"><i class="fa fa-certificate" aria-hidden="true"></i> Est. 2018</span>
+          <h2>Welcome to<br>Phi Dental</h2>
+          <blockquote class="about-quote">"To Build Your Smile With Our Heart."</blockquote>
+          <p>Founded in <strong>2018</strong> by Dr Sylvia, Phi Dental was built on a single vision — to transform lives through exceptional, accessible dental care in a warm, comfortable environment.</p>
+          <p>Our team of experienced, multilingual dentists (English, Mandarin &amp; Malay) continuously refines their skills through local and international professional development, bringing the latest techniques to our patients.</p>
+          <div class="about-stats">
+            <div class="about-stat-item">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Locations</span>
+            </div>
+            <div class="about-stat-item">
+              <span class="stat-number">12+</span>
+              <span class="stat-label">Services</span>
+            </div>
+            <div class="about-stat-item">
+              <span class="stat-number">365</span>
+              <span class="stat-label">Days Open</span>
+            </div>
+            <div class="about-stat-item">
+              <span class="stat-number">7+</span>
+              <span class="stat-label">Years</span>
+            </div>
+          </div>
+          <a href="about-us.html" class="btn btn-primary">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section id="features" class="why-choose-section section-padding">
+  <div class="container">
+    <div class="section-header text-center">
+      <p class="sec-label">Why Phi Dental</p>
+      <h2 class="section-title">The Phi Dental Difference</h2>
+      <p class="section-subtitle" style="margin:0 auto 0;">We combine clinical excellence with genuine care — because your comfort matters as much as your smile.</p>
+      <hr class="section-divider" />
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6" style="margin-bottom:24px;">
+        <div class="why-choose-box reveal reveal-delay-1">
+          <div class="why-icon-box"><i class="fa fa-user-md" aria-hidden="true"></i></div>
+          <h3 class="why-heading">Expert Dentists</h3>
+          <p class="why-sub-heading">Highly trained professionals who attend international courses to stay at the forefront of dentistry.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6" style="margin-bottom:24px;">
+        <div class="why-choose-box reveal reveal-delay-2">
+          <div class="why-icon-box"><i class="fa fa-flask" aria-hidden="true"></i></div>
+          <h3 class="why-heading">Modern Technology</h3>
+          <p class="why-sub-heading">State-of-the-art equipment including digital X-rays and advanced treatment tools for precise results.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6" style="margin-bottom:24px;">
+        <div class="why-choose-box reveal reveal-delay-3">
+          <div class="why-icon-box"><i class="fa fa-comments" aria-hidden="true"></i></div>
+          <h3 class="why-heading">Multilingual Team</h3>
+          <p class="why-sub-heading">Our team communicates fluently in English, Mandarin, and Bahasa Malaysia for your comfort.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6" style="margin-bottom:24px;">
+        <div class="why-choose-box reveal reveal-delay-4">
+          <div class="why-icon-box"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+          <h3 class="why-heading">Open Every Day</h3>
+          <p class="why-sub-heading">Monday to Sunday, 10am to 10pm — even on public holidays. We're here when you need us.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCATIONS ===== -->
+<section id="locations" class="section-padding" style="background:#fff;">
+  <div class="container">
+    <div class="section-header text-center">
+      <p class="sec-label">Find Us</p>
+      <h2 class="section-title">Our Locations</h2>
+      <p class="section-subtitle" style="margin:0 auto 0;">Three convenient branches across Kota Kinabalu and Penampang — each offering the full range of dental services.</p>
+      <hr class="section-divider" />
+    </div>
+    <div class="row">
+
+      <div class="col-md-4" style="margin-bottom:24px;">
+        <div class="location-card reveal reveal-delay-1">
+          <div class="location-card-header">
+            <h3>Suria Sabah</h3>
+            <span class="location-card-num">01</span>
+          </div>
+          <div class="location-card-image">
+            <img src="images/phi3.jpg" alt="Phi Dental Suria Sabah branch interior" />
+          </div>
+          <div class="location-card-body">
+            <div class="location-address">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Lot 2-33, Second Floor, Suria Sabah Shopping Mall, 88000 Kota Kinabalu, Sabah</span>
+            </div>
+            <div class="location-phone">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="tel:+60134103103">+6 013-4103103</a>
+            </div>
+            <div class="location-hours">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <span>Mon – Sun: 10:00 – 22:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" style="margin-bottom:24px;">
+        <div class="location-card reveal reveal-delay-2">
+          <div class="location-card-header">
+            <h3>Plaza 333</h3>
+            <span class="location-card-num">02</span>
+          </div>
+          <div class="location-card-image">
+            <img src="images/phi1.jpg" alt="Phi Dental Plaza333 branch interior" />
+          </div>
+          <div class="location-card-body">
+            <div class="location-address">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Lot 79, Ground Floor, Block I, Lorong Plaza333-3A, 88950 Penampang, Sabah</span>
+            </div>
+            <div class="location-phone">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="tel:+60143000139">+6 014-3000139</a>
+            </div>
+            <div class="location-hours">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <span>Mon – Sun: 10:00 – 22:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" style="margin-bottom:24px;">
+        <div class="location-card reveal reveal-delay-3">
+          <div class="location-card-header">
+            <h3>Taman Fortuna</h3>
+            <span class="location-card-num">03</span>
+          </div>
+          <div class="location-card-image">
+            <img src="images/dental.jpg" alt="Phi Dental Taman Fortuna branch interior" />
+          </div>
+          <div class="location-card-body">
+            <div class="location-address">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>Lot 8 (Ground Floor), Lorong Bunga Seroja 1, Taman Fortuna Ph 2, Jalan Penampang, 88200 Kota Kinabalu, Sabah</span>
+            </div>
+            <div class="location-phone">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="tel:+60199991303">+6 019-9991303</a>
+            </div>
+            <div class="location-hours">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <span>Mon – Sun: 10:00 – 22:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Map -->
+    <div class="map-container googleMap">
+      <a href="https://www.google.com/maps/search/Phi+Dental+Kota+Kinabalu/" target="_blank" rel="noopener noreferrer">
+        <img src="images/map2.jpg" alt="Map showing Phi Dental locations in Kota Kinabalu" class="img-responsive" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA — BOOK APPOINTMENT ===== -->
+<section class="cta-section" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="cta-content">
+      <h2 id="cta-heading">Ready to Transform Your Smile?</h2>
+      <p>Schedule your appointment today and experience the Phi Dental difference — expert care, modern technology, and a team that truly cares.</p>
+      <div class="cta-actions">
+        <a href="tel:+60134103103" class="btn btn-white btn-lg"><i class="fa fa-phone" aria-hidden="true"></i> Call &amp; Book Now</a>
+        <a href="https://wa.me/60134103103" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-lg"><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp Us</a>
+        <a href="contact-us.html" class="btn btn-outline-white btn-lg"><i class="fa fa-envelope" aria-hidden="true"></i> Send a Message</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="faq-section section-padding">
+  <div class="container">
+    <div class="section-header text-center">
+      <p class="sec-label">FAQ</p>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle" style="margin:0 auto 0;">Everything you need to know before your visit.</p>
+      <hr class="section-divider" />
+    </div>
+    <div class="faq-accordion">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What services does Phi Dental offer?</span>
+          <span class="faq-icon"><i class="fa fa-plus" aria-hidden="true"></i></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Phi Dental offers Braces, Dentures, Dental Implants, Invisalign, Root Canal Treatment, Scaling and Polishing, Teeth Whitening, Wisdom Tooth Extraction, Crowns &amp; Bridges, Paediatric Dentistry, Periodontal Treatment, and Oral Surgery.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do I need to book an appointment in advance?</span>
+          <span class="faq-icon"><i class="fa fa-plus" aria-hidden="true"></i></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Walk-in patients are always welcome. However, we recommend booking in advance to minimise your waiting time. Same-day appointments are often available — simply give us a call.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What payment methods do you accept?</span>
+          <span class="faq-icon"><i class="fa fa-plus" aria-hidden="true"></i></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">We accept cash, credit and debit cards, and major insurance plans. Flexible payment arrangements are available for more extensive treatments — please discuss with our team.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Are your clinics open on public holidays?</span>
+          <span class="faq-icon"><i class="fa fa-plus" aria-hidden="true"></i></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Yes! All three Phi Dental branches are open 365 days a year — including all public holidays — from 10:00 AM to 10:00 PM.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What languages do your dentists speak?</span>
+          <span class="faq-icon"><i class="fa fa-plus" aria-hidden="true"></i></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Our team is multilingual — proficient in English, Mandarin (Chinese), and Bahasa Malaysia. We ensure every patient is understood and feels comfortable throughout their treatment.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How often should I visit the dentist?</span>
+          <span class="faq-icon"><i class="fa fa-plus" aria-hidden="true"></i></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">We recommend a check-up and professional cleaning (scaling &amp; polishing) every six months. Regular visits help detect problems early and keep your teeth and gums healthy.</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="text-center" style="margin-top:40px;">
+      <a href="faq.html" class="btn btn-outline">View All FAQs</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact-section section-padding">
+  <div class="container">
+    <div class="section-header text-center">
+      <p class="sec-label">Get In Touch</p>
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-subtitle" style="margin:0 auto 0;">Have a question or want to book an appointment? We'd love to hear from you.</p>
+      <hr class="section-divider" />
+    </div>
+    <div class="row">
+      <div class="col-md-7" style="margin-bottom:24px;">
+        <div class="contact-form-wrapper">
+          <h3>Send Us a Message</h3>
+          <form action="#" method="POST" novalidate>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Your Name" name="name" required aria-label="Your Name" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Your Email" name="email" required aria-label="Your Email" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="tel" class="form-control" placeholder="Your Phone" name="phone" aria-label="Your Phone" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Subject" name="subject" aria-label="Subject" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Your Message" name="message" rows="5" required aria-label="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="contact-info-card">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+            <div class="contact-info-content">
+              <h4>Email</h4>
+              <p><a href="mailto:phidental13@gmail.com">phidental13@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+            <div class="contact-info-content">
+              <h4>Phone</h4>
+              <p><a href="tel:+60134103103">+6 013-4103103</a> — Suria</p>
+              <p><a href="tel:+60143000139">+6 014-3000139</a> — Plaza333</p>
+              <p><a href="tel:+60199991303">+6 019-9991303</a> — Fortuna</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+            <div class="contact-info-content">
+              <h4>Our Locations</h4>
+              <div class="contact-location-group">
+                <div class="contact-location-item">
+                  <h5>Suria Sabah</h5>
+                  <p>Lot 2-33, 2nd Floor, Suria Sabah, 88000 KK</p>
+                </div>
+                <div class="contact-location-item">
+                  <h5>Plaza333</h5>
+                  <p>Lot 79, Lorong Plaza333-3A, 88950 Penampang</p>
+                </div>
+                <div class="contact-location-item">
+                  <h5>Taman Fortuna</h5>
+                  <p>Lot 8, Lorong Bunga Seroja 1, Jalan Penampang, 88200 KK</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-info-item" style="border-bottom:none;padding-bottom:0;">
+            <div class="contact-info-icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+            <div class="contact-info-content">
+              <h4>Working Hours</h4>
+              <p>Monday – Sunday: 10:00 AM – 10:00 PM</p>
+              <p>Open on Public Holidays</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer-section">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
-        <a class="navbar-brand" href="index.html"><img src="images/logo_white.png" style="width:192px;height:52px;" class="img-responsive" alt="Logo"></a>
-      </div>
-      <div class="col-md-9">
-        <div class="menu-box">
-          <div id="navmenu">
+
+      <!-- Brand Column -->
+      <div class="col-md-4">
+        <div class="footer-widget">
+          <img src="images/logo_white.png" width="180" height="48" alt="Phi Dental" style="margin-bottom:var(--sp-4);opacity:0.9;" />
+          <p>Trusted dental care in Kota Kinabalu, Sabah since 2018. Three convenient locations. Open every day.</p>
+          <div class="footer-social-box">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="#" onclick="myFunction()">Gallery</a></li>
-              <li><a href="faq.html">FAQS</a></li>
-              <li class="pull-right">
-                <a href="#" class="call-menu"><span><i class="fa fa-volume-control-phone mr5"></i>+6 013-4103103</span></a>
-              </li>
+              <li><a href="https://www.facebook.com/phident/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="https://instagram.com/phidental" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="https://wa.me/60134103103" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+              <li><a href="mailto:phidental13@gmail.com" aria-label="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
             </ul>
           </div>
         </div>
       </div>
+
+      <!-- Quick Links Column -->
+      <div class="col-md-4">
+        <div class="footer-widget">
+          <h2>Quick Links</h2>
+          <ul class="footer-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact & Hours Column -->
+      <div class="col-md-4">
+        <div class="footer-widget">
+          <h2>Working Hours</h2>
+          <span><i class="fa fa-calendar" aria-hidden="true"></i> Monday – Sunday</span>
+          <span><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM – 10:00 PM</span>
+          <span><i class="fa fa-star" aria-hidden="true"></i> Open on Public Holidays</span>
+          <div style="margin-top:var(--sp-6);">
+            <h2>Contact</h2>
+            <span><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+60134103103" style="color:inherit;">+6 013-4103103</a></span>
+            <span><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:phidental13@gmail.com" style="color:inherit;">phidental13@gmail.com</a></span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-</div>
-<!-- /Header -->
-
-<!-- Banner Section -->
-<div class="banner-section">
-  <!-- slider -->
-  <div class="slider">
-    <div class="item slid-pic">
-      <div class="overlay-home"></div>
-      <div class="slide-captions">
-        <!-- slider-captions -->
-        <div class="container">
-          <div class="slide-title">Advanced Technology</div>
-          <div class="slide-heading">For all your dental needs</div>
-          <div class="mt50">
-            <a href="services.html" class="btn btn-linegreen">Read more</a>
-            <a href="services.html" class="btn btn-lineblue">Services</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item slid-pic2">
-      <div class="overlay-home"></div>
-      <div class="slide-captions">
-        <!-- slider-captions -->
-        <div class="container">
-          <div class="slide-title">Our Treatment</div>
-          <div class="slide-heading">Provide best dental treatment</div>
-          <div class="mt50">
-            <a href="services.html" class="btn btn-linegreen">Read more</a>
-            <a href="services.html" class="btn btn-lineblue">Services</a>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-  <!-- /slider -->
-
-</div>
-<!-- / Banner Section -->
-<!-- Department Section -->
-<div class="department-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1 class="heading-title">Services</h1>
-        <h4 class="sub-title mb60">Our special services</h4>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 col-sm-6">
-        <div class="row">
-          <div class="col-md-9 col-sm-9">
-            <h2><a href="#">Braces</a></h2>
-            <p class="mb60">Dental braces are orthodontic appliances designed to straighten and improve the aesthetics and...</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="row">
-          <div class="col-md-9 col-sm-9">
-            <h2><a href="#">Dentures</a></h2>
-            <p class="mb60">With the loss of multiple teeth and as the aging process sets in, you may experience not the...</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="row">
-          <div class="col-md-9 col-sm-9">
-            <h2><a href="#">Dental Implant</a></h2>
-            <p class="mb60">Implant dentistry is a specialised field for the replacement of missing teeth. This is done with...</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="row">
-          <div class="col-md-9 col-sm-9">
-            <h2><a href="#">Invisalign</a></h2>
-            <p class="mb60">Invisible Braces / Invisalign are transparent and removable orthodontic appliances for straightening...</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="row">
-          <div class="col-md-9 col-sm-9">
-            <h2><a href="#">Root Canal Treatment</a></h2>
-            <p class="mb60">Root canal treatment is a procedure, which eliminates infection that has reached the nerves...</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="row">
-          <div class="col-md-9 col-sm-9">
-            <h2><a href="#">Scaling and Polishing</a></h2>
-            <p class="mb60">Dental scaling and polishing should be done regularly because bacteria in the oral cavity...</p>
-          </div>
-        </div>
-      </div>
-
-      
-
-    </div>
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <a href="services.html" class="btn btn-default">View More</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /Department Section -->
-<!-- Footer-section -->
-<div class="footer-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="footer-contact-box">
-            <h2>Contact Us</h2>
-            <h3 style="color: #FFFFFF ;">Suria</h3>
-            <div class="contact-icon">
-              <i class="icon-location-pin icons"></i>
-              <p>Lot2-33, Second floor, Suria Sabah Shopping Mall, 88000 Kota Kinabalu, Sabah</p>
-            </div>
-            <div class="contact-icon">
-              <i class="icon-call-out icons"></i>
-              <p>+6 013-4103103</p>
-            </div>
-            <h3 style="color: #FFFFFF ;">Plaza333</h3>
-            <div class="contact-icon">
-              <i class="icon-location-pin icons"></i>
-              <p>Lot 79, Ground Floor, Block I, Lorong Plaza333-3A, Plaza333, 88950 Penampang, Sabah</p>
-            </div>
-            <div class="contact-icon">
-              <i class="icon-call-out icons"></i>
-              <p>+6 014-3000139</p>
-            </div>
-            <h3 style="color: #FFFFFF ;">Taman Fortuna</h3>
-            <div class="contact-icon">
-              <i class="icon-location-pin icons"></i>
-              <p>Lot 8 (Ground Floor), Lorong Bunga Seroja 1, Taman Fortuna Ph 2, Jalan Penampang, 88200 Kota Kinabalu, Sabah</p>
-            </div>
-            <div class="contact-icon">
-              <i class="icon-call-out icons"></i>
-              <p>+6 019-9991303</p>
-            </div>
-            <hr>
-            <div class="contact-icon">
-              <i class="icon-envelope icons"></i>
-              <p>phidental13@gmail.com</p>
-            </div>
-            
-            <div class="footer-social-box">
-              <ul>
-                <li><a href="https://www.facebook.com/phident/"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://instagram.com/phidental"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="mailto://phidental13@gmail.com"><i class="fa fa-envelope"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-offset-1 col-md-3">
-          <div class="footer-widget">
-            <h2>Navigation</h2>
-            <ul class="listnone bullet-arrow-right footer-ul footer-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="#" onclick="myFunction()">Gallery</a></li>
-                <li><a href="faq.html">FAQS</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="footer-widget">
-            <h2>Working Hours</h2>
-            <span> Monday to Sunday : 10:00 - 22:00 </span></br>
-            <span> Open on Public Holiday </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /Footer-section -->
-  
-  <!-- Tiny-footer Section -->
   <div class="tiny-footer-section">
     <div class="container">
-      <div class="row">
-        <div class="col-md-offset-4 col-md-6">
-          <div class="tiny-footer-copyright"> &copy; 2019. Phidental.my </div>
-        </div>
+      <div class="tiny-footer-copyright">
+        &copy; 2025 Phi Dental. All rights reserved. | <a href="https://phidental.my/">phidental.my</a>
       </div>
     </div>
   </div>
-  <!-- /Tiny Footer-section -->
-  <!-- jquery -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="js/menumaker.js"></script>
-  <script type="text/javascript" src="js/theme.js"></script>
-  <script>
-    function myFunction() {
-      window.open("https://instagram.com/phidental", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=250,width=1300height=1000");}</script>
-  <!-- end  jquery -->
-  <script>
-    var div = document.createElement('div');
-    div.className = 'fb-customerchat';
-    div.setAttribute('page_id', '425753967902581');
-    div.setAttribute('ref', 'b64:TGl2ZSBDaGF0');
-    document.body.appendChild(div);
-    window.fbMessengerPlugins = window.fbMessengerPlugins || {
-      init: function () {
-        FB.init({
-          appId            : '1678638095724206',
-          autoLogAppEvents : true,
-          xfbml            : true,
-          version          : 'v3.0'
-        });
-      }, callable: []
-    };
-    window.fbAsyncInit = window.fbAsyncInit || function () {
-      window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
-      window.fbMessengerPlugins.init();
-    };
-    setTimeout(function () {
-      (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) { return; }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    }, 0);
-  </script>
-  </body>
-  </html>
-  
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/60134103103" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with Phi Dental on WhatsApp">
+  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+  <span class="whatsapp-text">Chat with us</span>
+</a>
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+(function ($) {
+  "use strict";
+
+  /* Preloader */
+  $(window).on("load", function () {
+    $("#preloader").addClass("hidden");
+    setTimeout(function () { $("#preloader").css("display", "none"); }, 450);
+  });
+
+  /* Mobile nav */
+  var $h = $("#hamburger"), $n = $("#navmenu"), $o = $("#mobileOverlay");
+  $h.on("click", function () {
+    var open = $n.hasClass("active");
+    $h.toggleClass("active").attr("aria-expanded", !open);
+    $n.toggleClass("active");
+    $o.toggleClass("active");
+  });
+  $o.on("click", function () {
+    $h.removeClass("active").attr("aria-expanded", "false");
+    $n.removeClass("active");
+    $o.removeClass("active");
+  });
+  $n.find("a").on("click", function () {
+    if ($n.hasClass("active")) {
+      $h.removeClass("active").attr("aria-expanded", "false");
+      $n.removeClass("active"); $o.removeClass("active");
+    }
+  });
+
+  /* Sticky header */
+  $(window).on("scroll", function () {
+    $("#header").toggleClass("scrolled", $(this).scrollTop() > 50);
+  });
+
+  /* Smooth scroll for anchor links */
+  $(document).on("click", "a[href^='#']", function (e) {
+    var $t = $(this.getAttribute("href"));
+    if ($t.length) {
+      e.preventDefault();
+      $("html, body").animate({ scrollTop: $t.offset().top - $("#header").outerHeight() - 10 }, 560);
+    }
+  });
+
+  /* FAQ accordion */
+  $(".faq-question").on("click", function () {
+    var $item = $(this).closest(".faq-item");
+    var isOpen = $item.hasClass("active");
+    $(".faq-item").removeClass("active");
+    $(".faq-item .faq-answer").css("max-height", "0");
+    $(".faq-question").attr("aria-expanded", "false");
+    if (!isOpen) {
+      $item.addClass("active");
+      $item.find(".faq-answer").css("max-height", $item.find(".faq-answer-inner").outerHeight() + 48 + "px");
+      $(this).attr("aria-expanded", "true");
+    }
+  });
+
+  /* Scroll reveal */
+  function revealCheck() {
+    var wBottom = $(window).scrollTop() + $(window).height();
+    $(".reveal").each(function () {
+      if ($(this).offset().top < wBottom - 72) $(this).addClass("visible");
+    });
+  }
+  $(window).on("scroll", revealCheck);
+  $(window).on("load", function () { setTimeout(revealCheck, 150); });
+  revealCheck();
+
+})(jQuery);
+</script>
+
+<!-- Facebook Messenger -->
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function () {
+  FB.init({ appId: "1678638095724206", autoLogAppEvents: true, xfbml: true, version: "v18.0" });
+};
+(function (d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, "script", "facebook-jssdk"));
+</script>
+<div class="fb-customerchat" page_id="425753967902581" attribution="biz_inbox" theme_color="#C2185B"></div>
+
+</body>
+</html>
+""""""""""""</div>""""</div>""</div>""""""
